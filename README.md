@@ -1,2 +1,2 @@
-# C-programming-
-This repository has my C programming practice questions.
+# Programming-
+This repository has my all programming practice questions.
