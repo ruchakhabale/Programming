@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+//chk
+#pragma pack(1)
+class ArrayX
+{
+    public:
+        int *Arr;
+        int iSize;
+
+        ArrayX(int x)
+        {
+
+        }
+
+};
+
+
+int main()
+{
+    ArrayX aobj(5);     
+
+    cout<<sizeof(aobj)<<endl;   
+   
+   
+
+    return 0;
+}
