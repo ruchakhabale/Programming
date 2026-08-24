@@ -1,0 +1,20 @@
+from abc import ABC, abstractmethod 
+
+class Base(ABC):
+    @abstractmethod
+    def Addition(self,No1,No2):
+        pass
+
+class Derived(Base):
+    pass
+    
+
+
+dobj = Derived()     # Error 
+
+
+
+# full form : abstract base class
+# abc module name
+# ABC class name, for writing an Abtract method, we need to inherit this class 
+# abstractmethod naava cha decorator pnn magvla wala (imoprt wali stamt madhe )
