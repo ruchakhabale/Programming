@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def MarvellousPredictor():
+def Predictor():
     # Load the data
     X = [1,2,3,4,5]
     Y = [3,4,2,4,5]
@@ -11,7 +11,7 @@ def MarvellousPredictor():
     print("Values of Dependent variables Y :",Y)
 
 def main():
-    MarvellousPredictor()
+    Predictor()
 
 if __name__ == "__main__":
     main()
