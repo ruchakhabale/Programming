@@ -6,7 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
-def MarvellousRegression(DataPath):
+def Regression(DataPath):
     Border = "-"*50
     # Step 1 : Load the data
 
@@ -88,7 +88,7 @@ def MarvellousRegression(DataPath):
     print("Testing Data : ",X_test.shape)
 
 def main():
-    MarvellousRegression("Advertising.csv")
+    Regression("Advertising.csv")
 
 
 if __name__ == "__main__":
