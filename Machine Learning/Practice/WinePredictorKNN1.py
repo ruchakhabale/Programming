@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, confusion_matrix
 from sklearn.preprocessing import  StandardScaler
 
-def MarvellousClassifier(Datapath):
+def Classifier(Datapath):
     border = "-"*40
 
     print(border)
@@ -22,7 +22,7 @@ def MarvellousClassifier(Datapath):
 
     
 def main():
-    MarvellousClassifier("WinePredictor.csv")
+    Classifier("WinePredictor.csv")
 
 
 
