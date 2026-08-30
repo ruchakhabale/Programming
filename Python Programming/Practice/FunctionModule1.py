@@ -1,4 +1,4 @@
-import Marvellous    #apan apla module import kela aahe
+import Marvellous    
 
 def main():
     print("Enter first number : ")
@@ -7,7 +7,7 @@ def main():
     print("Enter second number : ")
     Value2 = int(input())
 
-    Ret = Marvellous.Addition(Value1, Value2)  #R.L.ex. Phoenix mall. Addidas. product
+    Ret = Marvellous.Addition(Value1, Value2) 
 
     print("Addition is : ",Ret)
 
