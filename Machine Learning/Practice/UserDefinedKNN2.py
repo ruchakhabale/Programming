@@ -1,4 +1,4 @@
-def MarvellousKNNClassifier():
+def KNNClassifier():
     border = "-"*40
 
     # List of dictionaries 
@@ -19,7 +19,7 @@ def MarvellousKNNClassifier():
     print(border)
 
 def main():
-    MarvellousKNNClassifier()
+    KNNClassifier()
 
 if __name__ == "__main__":
     main()
