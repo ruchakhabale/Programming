@@ -10,8 +10,8 @@ def main():
     Ret = Addition(Value1, Value2)  
     print("Addition is : ",Ret)
 
-    Ret = Substraction(Value1, Value2)   # Error
-    print("Substraction is : ",Ret)   # Ret naav chi pishavi reuse keli
+    Ret = Substraction(Value1, Value2)  
+    print("Substraction is : ",Ret)  
 
 if __name__ == "__main__":
     main() 
