@@ -10,7 +10,7 @@ def main():
     Ret = Addition(Value1, Value2)  
     print("Addition is : ",Ret)
 
-    Ret = Substraction(Value1, Value2)   # Error
+    Ret = Substraction(Value1, Value2)  
     print("Substraction is : ",Ret)  
 
 if __name__ == "__main__":
