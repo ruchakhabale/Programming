@@ -1,5 +1,5 @@
 def main():
-    Marks = list()  #this step creates list, we create an obj of list named class(list naava cha class cha  object)
+    Marks = list()  
 
     print("Enter 5 Marks : ")
 
