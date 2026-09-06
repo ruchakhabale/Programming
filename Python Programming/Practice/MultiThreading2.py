@@ -1,14 +1,14 @@
-import threading             # threading is a name of in built module
+import threading             
 
 def Display():
-    print("Inside Display : ",threading.get_ident())    # thread fakt create hoto, kaam karat nahi (child thread)
+    print("Inside Display : ",threading.get_ident())   
 
 def main():
-    print("Inside main : ",threading.get_ident())    # thread fakt create hoto, kaam karat nahi (parent thread)
+    print("Inside main : ",threading.get_ident())    
 
-    tobj = threading.Thread(target=Display)      # target=Display is keyword argument , threading naav cha module madhun Thread naav cha class cha obj banava tobj asa
+    tobj = threading.Thread(target=Display)     
 
-    tobj.start()   # thread chya obj cha naav.start mhnje thread chalu hoto
+    tobj.start()   
 
 
 if __name__ == "__main__":
