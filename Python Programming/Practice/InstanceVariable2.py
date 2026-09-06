@@ -19,13 +19,3 @@ mobj3 = Marvellous()
 print(mobj1.Value1)
 print(mobj2.Value1)
 
-
-
-
-
-# the variable that you create inside the constructor is Instance Variable, it is a part of object
-
-# toh (self)   haa this pointer of Python aahe, swatah mhnje ch self, swatah chya plate madhali jalebi, swatahcha.jalebi , self mhnje aplya obj madhe je aahe tee 
-
-# Static variable is called as Class Variable in Python, its use is just same as the static variable, it is part of a class
-
