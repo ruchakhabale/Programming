@@ -1,7 +1,6 @@
 def main():
     Marks = []
-
-    # append() mhnje list MUTABLE aahe , append mhnje ch Insert 
+ 
     Marks.append(11)
     Marks.append(21)
     Marks.append(51)
