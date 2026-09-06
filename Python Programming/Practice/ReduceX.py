@@ -19,7 +19,7 @@ def main():
 
     print("Data after filter : ",FData)
 
-    MData = list(map(Increment,FData))   #filter cha o/p i.e. FData i/p mhnunu map fuc la pass kela
+    MData = list(map(Increment,FData))   
 
     print("Data after map : ",MData)
 
