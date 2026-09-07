@@ -1,15 +1,13 @@
-// Error on purpose
+// Error unresolved
 
 import java.util.*;
-
-
 
 class program276
 {
     public static void main(String A[])
     {
-        Scanner sobj = new Scanner(System.in);     //Scanner class object
-        String data = null;                         //reference
+        Scanner sobj = new Scanner(System.in);    
+        String data = null;                         
         program280 strobj = new program280();            // Error 
         int iRet = 0;
 
