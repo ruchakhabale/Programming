@@ -82,6 +82,3 @@ class program273
        
     }
 }
-/*
-jar String che sagle methods eka same class madhe ektra ghetale tar that creates, a library of our own, upload it on GitHub
-*/
