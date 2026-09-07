@@ -78,7 +78,7 @@ class StringX
 
         for(i = 0; i<Arr.length; i++)
         {
-            if( (Arr[i] >= '!' && Arr[i] <= '/')||    //this || says kii if cha first() kiva second()khalchi line kiva parat khalchi line i.e. the condition written in those 4()brackets
+            if( (Arr[i] >= '!' && Arr[i] <= '/')||   
                 (Arr[i] >= ':' && Arr[i] <= '@')|| 
                 (Arr[i] >= '[' && Arr[i] <= '`')||
                 (Arr[i] >= '{' && Arr[i] <= '~'))
@@ -127,11 +127,3 @@ class program275
        
     }
 }
-/*
-interview madhe special symbols sathi tyachi ascii values vicharu shakto apan
-
-hee varti lihilele functions are readable, easy to unnderstand
-usually ppl use RegX i.e regular expressions but same can be achieved into without using it
-so tell the readability reason as justification for using it
-
-*/
