@@ -26,9 +26,9 @@ class program270
 {
     public static void main(String A[])
     {
-        Scanner sobj = new Scanner(System.in);     //Scanner class object
-        String data = null;                         //reference
-        StringX strobj = new StringX();            //object of StringX class
+        Scanner sobj = new Scanner(System.in);     
+        String data = null;                         
+        StringX strobj = new StringX();            
         int iRet = 0;
 
         System.out.println("Enter String : ");
