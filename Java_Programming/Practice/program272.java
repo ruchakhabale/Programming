@@ -62,10 +62,3 @@ class program272
        
     }
 }
-/*
-string is immutable 
-if we want to edit it, convert it into character array using tocharArray();
-then edit that array 
-convert it back to string 
-then return that string
-*/
