@@ -58,10 +58,3 @@ class program271
        
     }
 }
-
-/*
-String sathi str.length();
-Array sathi   Arr.length;
-
-
-*/
