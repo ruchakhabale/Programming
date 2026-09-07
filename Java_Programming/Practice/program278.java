@@ -17,7 +17,7 @@ class StringX
             }
         }
 
-        String ret = new String(Arr);      //converted back into a new string 
+        String ret = new String(Arr);     
 
         return ret;
     }
