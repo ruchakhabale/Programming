@@ -1,9 +1,3 @@
-/* this is StringX
-upload such a custom library on GitHub
-by creating a separate folder named as libraries 
-chckk not executed
-*/
-
 package Marvellous;
 
 
