@@ -78,7 +78,7 @@ public class program280
 
         for(i = 0; i<Arr.length; i++)
         {
-            if( (Arr[i] >= '!' && Arr[i] <= '/')||    //this || says kii if cha first() kiva second()khalchi line kiva parat khalchi line i.e. the condition written in those 4()brackets
+            if( (Arr[i] >= '!' && Arr[i] <= '/')||    
                 (Arr[i] >= ':' && Arr[i] <= '@')|| 
                 (Arr[i] >= '[' && Arr[i] <= '`')||
                 (Arr[i] >= '{' && Arr[i] <= '~'))
