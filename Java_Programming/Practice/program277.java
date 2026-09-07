@@ -1,4 +1,3 @@
-//chckk not executed
 import java.util.*;              // in built
 import Marvellous.StringX;       //user defined
 
@@ -7,9 +6,9 @@ class program277
 {
     public static void main(String A[])
     {
-        Scanner sobj = new Scanner(System.in);     //Scanner class object
-        String data = null;                         //reference
-        program280 strobj = new program280();            // Error 
+        Scanner sobj = new Scanner(System.in);     
+        String data = null;                         
+        program280 strobj = new program280();          
         int iRet = 0;
 
         System.out.println("Enter String : ");
