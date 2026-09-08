@@ -11,7 +11,3 @@ def Demo():
 
 Display()
 Demo()
-
-
-# complier finds out only the syntactical errors only 
-# for logical errors the execution stops at intepretation level
