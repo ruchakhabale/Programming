@@ -1,4 +1,3 @@
-# reduce() function is in-bulit only but we need to import separately 
 from functools import reduce
 
 def CheckEven(No):
