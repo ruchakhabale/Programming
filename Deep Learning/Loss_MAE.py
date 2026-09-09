@@ -16,6 +16,3 @@ Y_Pred = [12,18,33]
 loss = MAE(Y_True,Y_Pred)
 
 print("Loss is : ",loss)
-
-
-# why we don't take sqaure for MAE and why sq for MSE, write explanation in nb (SN)
