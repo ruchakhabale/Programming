@@ -37,7 +37,7 @@ int main()
     cout<<"Elements of the array are : \n";
     for(iCnt = 0; iCnt < iLength; iCnt++)
     {
-        cout<<Brr[iCnt]<<endl;    //endl - end of line similar to \n
+        cout<<Brr[iCnt]<<endl;    
     }
 
     iRet = Summation(Brr, iLength);
