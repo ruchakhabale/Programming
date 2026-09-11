@@ -13,9 +13,7 @@ int CountOdd(int Arr[], int iSize)
             iCount++;
         }
     }
-
     return iCount;
-
 }
 
 int main()
