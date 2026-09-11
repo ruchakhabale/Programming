@@ -13,10 +13,6 @@ void Display(int Arr[], int iSize)
     }
 }
 
-
-
-
-
 int main()
 {
     int *Brr = NULL;
