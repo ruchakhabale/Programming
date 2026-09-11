@@ -13,8 +13,8 @@ bool LinearSearch(int Arr[], int iSize)
         if(Arr[iCnt] == 11)
         {
             bFlag = true;
-            break;          //break comes after the bFlag is true, control loop chya baher jato break mule 
-                            //ani return mule control function
+            break;          
+                            
         }
     }
 
