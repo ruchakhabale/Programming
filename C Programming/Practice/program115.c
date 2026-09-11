@@ -1,4 +1,4 @@
-//this has errors on purpose
+// Error is not resolved yet 
 #include <stdio.h>
 
 void Display(int Arr[], int iSize)       
