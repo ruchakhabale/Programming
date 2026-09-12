@@ -1,4 +1,3 @@
-// gives warning so use -w while executing the code
 #include<stdio.h>
 
 int main()
@@ -9,4 +8,3 @@ int main()
 
     return 0;
 }
-// jithe \0 milat tithe ch thmbta, tyachya pude toh jaat ch nahi
