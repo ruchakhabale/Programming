@@ -1,4 +1,3 @@
-//Problems on String starts
 #include<stdio.h>
 
 int main()
