@@ -6,14 +6,13 @@ int main()
     char str[] = "Jay Ganesh";
     int iRet = 0;
 
-    iRet = strlen(str);  //this is function
+    iRet = strlen(str);  
     
     printf("Length of syring is : %d\n",iRet);
 
-    iRet = sizeof(str);  //this is operator
+    iRet = sizeof(str);  
 
     printf("Size of string is : %d\n",iRet);
 
     return 0;
 }
-
