@@ -1,9 +1,8 @@
 #include<stdio.h>
 
-
 int main()
 {
-    char * str = "Ganesh";  // char str[] = "Ganesh"   both are same (array == pointer can be treated as e.o.)
+    char * str = "Ganesh";  
 
     printf("%c\n",*str);
     str++;
@@ -24,8 +23,6 @@ int main()
     str++;
 
 
-
-    
     return 0;
 }
 
