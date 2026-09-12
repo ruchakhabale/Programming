@@ -8,4 +8,3 @@ int main()
 
     return 0;
 }
-//initialization using ' ' doesnt give \0 at the end 
