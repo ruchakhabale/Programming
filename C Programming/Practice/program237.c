@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-
 int main()
 {
     char * str = "Ganesh";  
@@ -11,7 +10,5 @@ int main()
         str++;
     }
 
-    
     return 0;
 }
-
