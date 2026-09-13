@@ -2,7 +2,7 @@
 
 void strlenX(char * str)
 {
-    *str = 'A';  // this changes the 1st letter of the array (which is not correct)
+    *str = 'A';  
 }
 
 int main()
@@ -16,7 +16,6 @@ int main()
     strlenX(Arr);
 
     printf("String is : %s\n",Arr);
-
 
     return 0;
 }
