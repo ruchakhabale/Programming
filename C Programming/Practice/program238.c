@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-
 int main()
 {
     char * str = "Ganesh";
@@ -8,7 +7,7 @@ int main()
 
     while(*str != '\0')
     {
-        iCount++; //gives the length of the string
+        iCount++;
         str++;
     }
 
