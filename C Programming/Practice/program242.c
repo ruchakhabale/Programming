@@ -16,10 +16,3 @@ int main()
 
     return 0;
 }
-
-/*
-here, the function nneds only 1 paramtere, i.e. the array and not its size(iSize from previous codes)
- that bcoz here we can tell to understand the end of array by recogninizing when we get the \0 that shud be the end of array 
- so no need to give its size explicitly  
-
-*/
