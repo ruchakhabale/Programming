@@ -14,7 +14,7 @@ class program265
         
         System.out.println("Length of string is : "+Arr.length()); 
         
-        char str[] = Arr.toCharArray();   //converts it into the character array, earlier it was not an array 
+        char str[] = Arr.toCharArray();   
 
         int i = 0;
         for(i = 0; i < str.length;i++)
