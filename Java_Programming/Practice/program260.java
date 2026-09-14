@@ -5,11 +5,11 @@ class program260
     public static void main(String A[])
     {
         Scanner sobj = new Scanner(System.in);
-        String Arr = null;  //this Arr is reference of class String, it is not an Array
+        String Arr = null;  
 
 
         System.out.println("Enter string : ");
-        Arr = sobj.nextLine();   //nextLine() due to string 
+        Arr = sobj.nextLine();  
  
         System.out.println("Entered string : "+Arr);
     }
