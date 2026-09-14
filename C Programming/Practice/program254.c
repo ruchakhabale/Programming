@@ -1,5 +1,4 @@
- 
-#include<stdio.h>
+ #include<stdio.h>
 
 int CountSmall(const char * str)
 {
