@@ -29,14 +29,12 @@ class program279
         StringX strobj = new StringX();   
         String sRet = null;        
         
-
         System.out.println("Enter String : ");
         data = sobj.nextLine();
 
         sRet = strobj.Update(data);
 
         System.out.println("Updated string is : "+sRet);
-       
        
     }
 }
