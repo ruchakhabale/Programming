@@ -15,6 +15,5 @@ class program267
 
         System.out.println(str.length());
 
-
     }
 }
