@@ -23,7 +23,6 @@ class StringX
     }
 }
 
-
 class program278
 {
     public static void main(String A[])
@@ -40,7 +39,6 @@ class program278
         sRet = strobj.Update(data);
 
         System.out.println("Updated string is : "+sRet);
-       
        
     }
 }
