@@ -35,7 +35,6 @@ class StringX
     }
 }
 
-
 class program271
 {
     public static void main(String A[])
