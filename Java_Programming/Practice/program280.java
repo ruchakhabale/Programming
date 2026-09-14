@@ -1,6 +1,5 @@
 package Marvellous;
 
-
 public class program280
 {
     public int CountCapital(String str)
