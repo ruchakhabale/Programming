@@ -5,7 +5,7 @@ class program266
     public static void main(String A[])
     {
         Scanner sobj = new Scanner(System.in);
-        String str = null;  //its a reference 
+        String str = null; 
 
         System.out.println("Enter String : ");
         str = sobj.nextLine();
