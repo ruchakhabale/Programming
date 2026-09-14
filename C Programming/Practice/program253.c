@@ -8,7 +8,7 @@ int CountVowels(const char * str)
     while(*str != '\0')
     {
         if(*str == 'a' || *str == 'e' || *str == 'i' || *str == 'o'|| *str == 'u' ||
-            *str == 'A' || *str == 'E' || *str == 'I' || *str == 'O' || *str == 'U' )   // case In sensitive
+            *str == 'A' || *str == 'E' || *str == 'I' || *str == 'O' || *str == 'U' )   
         {
             iCount++;
         }
