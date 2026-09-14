@@ -21,7 +21,6 @@ class StringX
     }
 }
 
-
 class program270
 {
     public static void main(String A[])
