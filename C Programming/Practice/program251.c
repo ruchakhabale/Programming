@@ -6,7 +6,7 @@ int Count(const char * str)
 
     while(*str != '\0')
     {
-        if(*str == 'a' || *str == 'A')   // case In sensitive
+        if(*str == 'a' || *str == 'A')   
         {
             iCount++;
         }
@@ -26,7 +26,6 @@ int main()
     iRet = Count(Arr);
 
     printf("Frequency is : %d\n",iRet);
-
 
     return 0;
 }
