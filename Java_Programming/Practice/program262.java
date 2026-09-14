@@ -5,16 +5,15 @@ class program262
     public static void main(String A[])
     {
         Scanner sobj = new Scanner(System.in);
-        String Arr = null;  //this Arr is reference, it is not an Array
+        String Arr = null; 
 
 
         System.out.println("Enter string : ");
         Arr = sobj.nextLine();   
  
         
-        System.out.println(Arr.charAt(0));                            //System.out.println(Arr[0]);
-        System.out.println(Arr.charAt(1));                             //System.out.println(Arr[1]);
-        System.out.println(Arr.charAt(2));                             //System.out.println(Arr[2]);
+        System.out.println(Arr.charAt(0));                            
+        System.out.println(Arr.charAt(1));                            
+        System.out.println(Arr.charAt(2));                          
     }
 }
-
