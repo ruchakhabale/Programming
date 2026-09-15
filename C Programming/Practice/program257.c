@@ -1,5 +1,4 @@
- 
-#include<stdio.h>
+ #include<stdio.h>
 
 int CountSpace(const char * str)
 {
@@ -27,7 +26,6 @@ int main()
     iRet = CountSpace(Arr);
 
     printf("Frequency is : %d\n",iRet);
-
 
     return 0;
 }
