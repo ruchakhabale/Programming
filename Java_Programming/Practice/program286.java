@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 class StringX
@@ -29,14 +28,12 @@ class program286
         StringX strobj = new StringX();   
         String sRet = null;        
         
-
         System.out.println("Enter String : ");
         data = sobj.nextLine();
 
         sRet = strobj.toUpperX(data);
 
         System.out.println("Updated string is : "+sRet);
-       
        
     }
 }
