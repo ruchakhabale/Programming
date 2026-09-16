@@ -1,0 +1,44 @@
+// reverse display karna ani reverse karna are 2 diff things and this is the actual reverse
+#include<stdio.h>
+
+void strrevX(char * str)
+{
+    /*
+    name of 3 pointers used in this program:
+    str
+    start 
+    end
+    */ 
+    
+    char *start = NULL;   
+    char *end = NULL;
+
+    start = str;    
+
+    while(*str != '\0')
+    {
+        str++;
+    }
+    
+    str--;
+
+    while(start <= str)
+    {
+        printf("%s\n",str);  
+        str--;    
+    } 
+    printf("\n"); 
+}
+
+int main()
+{
+    char Arr[50] = {'\0'};
+
+    printf("Enter String : \n");
+    scanf("%[^'\n]s",Arr);
+
+    ReverseDisplay(Arr);
+
+    return 0;
+}
+
