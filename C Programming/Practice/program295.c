@@ -1,4 +1,3 @@
-// reverse display karna ani reverse karna are 2 diff things and this is the actual reverse
 #include<stdio.h>
 
 void strrevX(char * str)
@@ -41,4 +40,3 @@ int main()
 
     return 0;
 }
-
