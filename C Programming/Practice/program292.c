@@ -1,4 +1,3 @@
-// reverse display karna ani reverse karna are 2 diff things 
 #include<stdio.h>
 
 void ReverseDisplay(char * str)
