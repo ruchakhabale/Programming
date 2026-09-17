@@ -1,5 +1,3 @@
-// reverse display karna ani reverse karna are 2 diff things and this is the actual reverse (versions)
-//using Call by Address is really imp in c 
 #include<stdio.h>
 
 void strrevX(char * str)
@@ -23,7 +21,7 @@ void strrevX(char * str)
     }
     
     str--;
-    end = str;  //pointer named 'end' will point to '\0'
+    end = str;  
 
     while(start < end)
     {
@@ -46,4 +44,3 @@ int main()
 
     return 0;
 }
-
