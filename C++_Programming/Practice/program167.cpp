@@ -31,7 +31,6 @@ class ArrayX
 
 };
 
-
 int main()
 {    
  
