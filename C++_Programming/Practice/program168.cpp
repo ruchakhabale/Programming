@@ -55,7 +55,6 @@ class ArrayX
 
         }
 };
-
 int main()
 {    
  
