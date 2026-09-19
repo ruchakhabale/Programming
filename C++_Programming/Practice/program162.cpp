@@ -23,7 +23,6 @@ class ArrayX
 
 };
 
-
 int main()
 {    
  
