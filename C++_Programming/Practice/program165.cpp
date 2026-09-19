@@ -24,7 +24,6 @@ class ArrayX
 
 };
 
-
 int main()
 {    
  
