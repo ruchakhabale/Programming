@@ -67,7 +67,6 @@ class ArrayX
             return iSum;
         }
 };
-
 int main()
 {    
  
