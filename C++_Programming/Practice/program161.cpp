@@ -9,8 +9,6 @@ class ArrayX
         int iSize;
 
         
-
-        
         ArrayX(int X)
         {
             iSize = X;                  
