@@ -20,9 +20,7 @@ class ArrayX
             
             delete []Arr;   
         }
-
 };
-
 
 int main()
 {    
