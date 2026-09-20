@@ -1,5 +1,4 @@
 // accept input from user and update to toggle
-
 import java.util.*;
 
 class StringX
