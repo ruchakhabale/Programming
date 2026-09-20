@@ -1,9 +1,8 @@
-// Type 2 
-import java.util.Scanner;
+ import java.util.Scanner;
 
 class program41
 {
-    static void CheckDivisible(int iNo)   //here the access specifier is default access specifier, as no other type of access specifier is wriitten explicitly here
+    static void CheckDivisible(int iNo)  
     {
         if((iNo % 3 == 0) && (iNo % 5 == 0))
        {
@@ -13,10 +12,7 @@ class program41
        {
         System.out.println("Number is not divisible by 3 and 5");
        }
-
-
     }
-
 
     public static void main(String A []) 
     {
@@ -31,6 +27,3 @@ class program41
 
     }
 }
-
-
-
