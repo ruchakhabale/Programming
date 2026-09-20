@@ -12,10 +12,7 @@ class program40
        {
         System.out.println("Number is not divisible by 3 and 5");
        }
-
-
     }
-
 
     public static void main(String A []) 
     {
@@ -26,11 +23,7 @@ class program40
        System.out.println("Enter number : ");
        iValue = sobj.nextInt();
 
-       //CheckDivisible(iValue);   //error
-
-       
+       CheckDivisible(iValue);   //error
 
     }
 }
-
-
