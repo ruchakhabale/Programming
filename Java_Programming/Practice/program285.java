@@ -1,5 +1,4 @@
 // accept input from user and update to uppercase
-
 import java.util.*;
 
 class StringX
