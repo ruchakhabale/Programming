@@ -22,5 +22,3 @@ class program39
 
     }
 }
-
-
