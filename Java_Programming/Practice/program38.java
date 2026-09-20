@@ -1,4 +1,3 @@
-
 class program38
 {
     public static void main(String A []) 
@@ -11,4 +10,3 @@ class program38
        }
     }
 }
-
