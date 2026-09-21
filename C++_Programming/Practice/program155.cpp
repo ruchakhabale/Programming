@@ -16,7 +16,6 @@ class ArrayX
 
 };
 
-
 int main()
 {
     ArrayX aobj;     // error 
