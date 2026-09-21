@@ -8,13 +8,12 @@ class ArrayX
         int *Arr;
         int iSize;
 
-        //Paramterised constructor
         ArrayX(int X)
         {
             cout<<"Inside Constructor \n";
 
-            iSize = X;                  //Characteristics initialisation
-            Arr = new int [iSize];      //Resource allocation (here, Array is resource) 
+            iSize = X;                  
+            Arr = new int [iSize];       
 
         }
 
@@ -31,7 +30,7 @@ class ArrayX
 int main()
 {
     //Static memory allocation for object 
-    //ArrayX aobj1(5);     
+    ArrayX aobj1(5);     
  
     ArrayX * aobj = new ArrayX(5);
    
