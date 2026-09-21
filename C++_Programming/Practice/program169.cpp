@@ -1,6 +1,5 @@
 #include<iostream>
-using namespace std;
-//CHK, check for errors, (related to spring boot, refer again after learning) 
+using namespace std; 
 #pragma pack(1)
 class ArrayX
 {
@@ -9,8 +8,8 @@ class ArrayX
         int iSize;
 
     public:
-        // Paramterised constructor with default argument :  it will work as default constr as well as parameterised both.    
-        ArrayX(int X = 5)  //kahi value deli nahi tar tyala by deafult 5 consider karto
+   
+        ArrayX(int X = 5) 
         {
             iSize = X;                 
             Arr = new int [iSize];      
