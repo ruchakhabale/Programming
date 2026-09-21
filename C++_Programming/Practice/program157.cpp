@@ -19,14 +19,12 @@ class ArrayX
         {
 
         }
-
 };
-
 
 int main()
 {
-    ArrayX aobj1;                         //calls defualt constructo
-    ArrayX aobj2(5);                      //calls parameterized 
+    ArrayX aobj1;                         
+    ArrayX aobj2(5);                      
 
     cout<<sizeof(aobj1)<<endl;            //12 bytes
     cout<<sizeof(aobj2)<<endl;
