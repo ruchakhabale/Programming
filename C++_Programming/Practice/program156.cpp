@@ -8,7 +8,6 @@ class ArrayX
         int *Arr;
         int iSize;
 
-
         ArrayX(int X)
         {
             
