@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-//chk
+
 #pragma pack(1)
 class ArrayX
 {
