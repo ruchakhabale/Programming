@@ -8,9 +8,8 @@ class ArrayX
         int *Arr;
         int iSize;
 
-    public:
-        // Paramterised constructor with default argument :  it will work as default constr as well as parameterised both.    
-        ArrayX(int X = 5)  //kahi value deli nahi tar tyala by deafult 5 consider karto
+    public:   
+        ArrayX(int X = 5)  
         {
             iSize = X;                 
             Arr = new int [iSize];      
