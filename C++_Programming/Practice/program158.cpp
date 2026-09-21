@@ -8,13 +8,12 @@ class ArrayX
         int *Arr;
         int iSize;
 
-        //Paramterised constructor
         ArrayX(int X)
         {
             cout<<"Inside Constructor \n";
 
-            iSize = X;                  //Characteristics initialisation
-            Arr = new int [iSize];      //Resource allocation (here, Array is resource) 
+            iSize = X;                  
+            Arr = new int [iSize];     
 
         }
 
@@ -24,9 +23,7 @@ class ArrayX
             cout<<"Inside Destructor \n";
             delete []Arr;    //Resource Deallocation
         }
-
 };
-
 
 int main()
 {
