@@ -21,6 +21,5 @@ int main()
     
     Display(Arr);   
 
-    
     return 0;
 }
