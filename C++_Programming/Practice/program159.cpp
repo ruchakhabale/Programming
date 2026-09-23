@@ -26,7 +26,6 @@ class ArrayX
 
 };
 
-
 int main()
 {
     //Static memory allocation for object 
