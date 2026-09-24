@@ -16,9 +16,9 @@ print(Border)
 print("Step 1 : Load the dataset")
 print(Border)
 
-DataPath = "iris.csv"              # absolute path
+DataPath = "iris.csv"              
 
-df = pd.read_csv(DataPath)           # df - dataframe
+df = pd.read_csv(DataPath)          
 
 print("Dataset loaded successfully")
 print("Initial Entries from dataset are : ")
@@ -33,7 +33,7 @@ print(Border)
 print("Step 2 : Data Analysis (EDA)")
 print(Border)
 
-print("Shape of dataset : ",df.shape)                           #df.shape is a property not a function
+print("Shape of dataset : ",df.shape)                          
 
 print("Column names are : ",list(df.columns))
 
