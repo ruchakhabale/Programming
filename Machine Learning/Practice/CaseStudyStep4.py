@@ -29,7 +29,7 @@ print(Border)
 print("Step 2 : Data Analysis (EDA)")
 print(Border)
 
-print("Shape of dataset : ",df.shape)                           #df.shape is a property not a function
+print("Shape of dataset : ",df.shape)                           
 
 print("Column names are : ",list(df.columns))
 
