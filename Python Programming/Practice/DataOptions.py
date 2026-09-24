@@ -1,8 +1,8 @@
 No = 11
-print(type(No))    #int
+print(type(No))   
 
 X = 89.90
-print(type(No))   #float
+print(type(No)) 
 
 Y = 8 + 8j
-print(type(Y))  #complex
+print(type(Y)) 
