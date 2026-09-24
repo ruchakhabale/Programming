@@ -11,10 +11,3 @@ class Derived(Base):
 
 
 dobj = Derived()     # Error 
-
-
-
-# full form : abstract base class
-# abc module name
-# ABC class name, for writing an Abtract method, we need to inherit this class 
-# abstractmethod naava cha decorator pnn magvla wala (imoprt wali stamt madhe )
