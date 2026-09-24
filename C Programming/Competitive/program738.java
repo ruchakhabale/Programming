@@ -22,7 +22,7 @@ class program738
 
         for(int i = 0; i < Tokens.length; i++)
         {
-            if(Tokens[i].length() >= iMax)    // if we have two words of same length, here we get last largest word 
+            if(Tokens[i].length() >= iMax)    
             {
                 iMax = Tokens[i].length();
                 temp = Tokens[i];
