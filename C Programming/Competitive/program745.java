@@ -21,7 +21,7 @@ class program745
 
         String Tokens[] = str.split(" ");
 
-        StringBuffer sb = null;                            // this is mutuable
+        StringBuffer sb = null;                            
 
         for(int i = 0; i < Tokens.length ; i++)
         {
