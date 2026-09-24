@@ -22,7 +22,7 @@ class program746
         String Tokens[] = str.split(" ");
 
         StringBuffer sb = null;                            
-        StringBuffer Finalstr = new StringBuffer("");                   // for appending the words from string 
+        StringBuffer Finalstr = new StringBuffer("");                  
 
         for(int i = 0; i < Tokens.length ; i++)
         {
@@ -34,4 +34,3 @@ class program746
         System.out.println(Finalstr);
     }
 }
-
