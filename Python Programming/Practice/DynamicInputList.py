@@ -1,8 +1,6 @@
-#recvk 
-
 def main():
     Size = 0
-    Arr = list()   # this also works Arr[]
+    Arr = list()   
 
     print("Enter the number of elements : ")
     Size = int(input())
