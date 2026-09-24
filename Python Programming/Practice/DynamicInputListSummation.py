@@ -7,7 +7,7 @@ def Summation(Data):
 
 def main():
     Size = 0
-    Arr = list()   # this also works Arr[]
+    Arr = list()  
 
     print("Enter the number of elements : ")
     Size = int(input())
@@ -22,9 +22,7 @@ def main():
 
     print("Summation is : ",Ret)
 
-
-
-      
+  
 if __name__ == "__main__":
     main()
     
