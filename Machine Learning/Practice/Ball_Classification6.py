@@ -9,11 +9,11 @@ def main():
     Dependent = [1,1,2,1,2,1,2,1,1,1,2,1,2]
     # Testing labels = [1,2]
 
-    model = tree.DecisionTreeClassifier()             # DecisionTreeClassifier class's object got created
+    model = tree.DecisionTreeClassifier()            
 
-    model = model.fit(Independent,Dependent)           # Train the model
+    model = model.fit(Independent,Dependent)          
 
-    Result = model.predict([[35,1] ,[95,0]])           # Test the model
+    Result = model.predict([[35,1] ,[95,0]])           
 
     print("Predicted result of model is : ",Result)
 
