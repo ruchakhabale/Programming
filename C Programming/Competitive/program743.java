@@ -50,12 +50,3 @@ class program743
 
     }
 }
-
-/*
-string to character array
-
-operations on character array
-
-back to string 
-
-*/
