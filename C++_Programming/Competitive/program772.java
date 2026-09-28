@@ -24,12 +24,3 @@ class program772
         
     }
 }
-
-/*
-
-Interview que 100% diff bet for and for each loop 
-
-as per keyword startegy - its for loop
-as per implementation - its for each loop
-
-*/
