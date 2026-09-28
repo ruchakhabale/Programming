@@ -21,8 +21,3 @@ class program769
         System.out.println(hobj.keySet());
     }
 }
-
-/*
- .keySet() gives us the keys 
-
-*/
