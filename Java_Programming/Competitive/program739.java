@@ -19,8 +19,7 @@ class program739
 
         String temp = null;
 
-        // code without taking iMax variable
-        temp = Tokens[0];    // we need a variable to store so temp is taken to store
+        temp = Tokens[0];    
 
         for(int i = 0; i < Tokens.length; i++)
         {
