@@ -1,4 +1,4 @@
-def main():   #not self executable line
+def main():  
     print("Inside main")
 
-main()   #self executableline
+main()   
