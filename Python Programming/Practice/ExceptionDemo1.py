@@ -1,8 +1,4 @@
 
-
-
-
-
 def main():
     print("Enter first number : ")
     No1 = int(input())
@@ -16,12 +12,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-
-
-
-
-
-
