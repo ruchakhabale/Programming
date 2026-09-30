@@ -7,11 +7,11 @@ def main():
         print("Enter second number : ")
         No2 = int(input())
 
-        Ans = No1 / No2        #ethe exception yenya che chances astat
+        Ans = No1 / No2      
 
-        print("Division is successful")    #jar exception aala nahi tar ch hii line yeu shakte 
+        print("Division is successful")    
 
-    # Generic except block
+
     except Exception as eobj:
         print("Exception occured : ",eobj)
 
