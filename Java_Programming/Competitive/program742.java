@@ -1,4 +1,4 @@
-// Accept string from user and convert it into Camel case (first letter of every word should be capital)
+// Accept string from user and convert it into Camel case
 /*
 
 Input : my name is amit 
