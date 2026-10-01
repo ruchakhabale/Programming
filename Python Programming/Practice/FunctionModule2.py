@@ -1,4 +1,4 @@
-import Marvellous as MI   # here, as is used like alis
+import Marvellous as MI  
 
 def main():
     print("Enter first number : ")
