@@ -3,11 +3,9 @@ class Base:
         print("inside base constructor")
 
 
-
-
 class Derived(Base):
     def __init__(self):
-        super().__init__()         # we are explicitly calling the magic method
+        super().__init__()         
         print("inside derived construtor")
 
 dobj = Derived()
