@@ -1,7 +1,7 @@
-def Display():   #non self executable line it is
+def Display():   
     print("Inside Display")
 
-Display()        # execution starts here at this line
+Display()       
 Display()
 
 print("End of application")
