@@ -1,4 +1,4 @@
-no = 11    #Global variable
+no = 11   
 
 def Display():
     print("From Display : ",no)
