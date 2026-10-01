@@ -6,11 +6,9 @@ def main():
     
     print("Input data is : ",Data)
 
-    FData = list(filter(CheckEven,Data))  # list madhe aanun dee tyat sathi list(Filter(data,chckeve)) lihil aahe, passing CheckEven as a parameter to this 
+    FData = list(filter(CheckEven,Data))  
 
     print("Data after filter : ",FData)
 
 if __name__ == "__main__":
     main()
-
-# eka function la dusara function as a parameter pass karto tevha tee functional programming hota 
