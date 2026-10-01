@@ -1,7 +1,7 @@
-no = 11    #global variable
+no = 11   
 
 def Display():
-    a = 21   # Local Variable
+    a = 21   
     print("From Display : ",no)
     print("From Display value of a is : ",a)
 
