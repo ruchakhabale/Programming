@@ -1,17 +1,15 @@
 import tensorflow as tf
 
-# Scalar tensor (0-D Tensor)
 scalar_tensor = tf.constant(11)
 print("Scalar Tensor : ",scalar_tensor)
 
-# 1-D tensor (Vector)
 vector_tensor = tf.constant([11,21,51,101])
 print("Vector Tensor : ",vector_tensor)
 
-# 2-D tensor (Matrix)
+
 matrix_tensor = tf.constant([[10,20,30],[40,50,60]])
 
-# 3-D tensor
+
 tensor_3d = tf.constant([
     [[1,2],[3,4]],
     [[5,5]],[6,6],
@@ -19,4 +17,3 @@ tensor_3d = tf.constant([
 ])
 
 print("3D tensor : ",tensor_3d)
-
