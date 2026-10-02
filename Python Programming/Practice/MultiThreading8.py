@@ -18,7 +18,6 @@ def SumOdd(No):
 
 
 def main():
-    #stop watch start
     start_time = time.perf_counter()
 
     t1 = threading.Thread(target=SumEven, args=(100000000,))
@@ -30,7 +29,6 @@ def main():
     t1.join()
     t2.join()
 
-    #stop watch ends here
     end_time = time.perf_counter()
 
     print(f"Time required is : {end_time-start_time:.4f}")
