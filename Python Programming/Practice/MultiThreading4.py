@@ -5,7 +5,6 @@ def Display(No1, No2, No3):
 def main():
     print("Inside main : ",threading.get_ident())    
 
-    #passing parameters to thread function so we need to give iterable so (11,) says tuple
     tobj = threading.Thread(target=Display, args = (11,21,51,))      
 
     tobj.start()  
