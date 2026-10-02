@@ -8,12 +8,12 @@ bias = tf.constant(0.1)
 
 weighted_sum = tf.reduce_sum(input*weights) + bias
 
-print("Inputs : ",inputs.numpy())             # 1.0,2.0,3.0
-print("Weights : ",weights.numpy())           # 0.5,-0.2,0.8
-print("Bias : ",bias.numpy())                 # 1.0
+print("Inputs : ",inputs.numpy())             
+print("Weights : ",weights.numpy())           
+print("Bias : ",bias.numpy())                 
 
-print("Weighted Sum : ",weighted_sum.numpy())  #2.6
+print("Weighted Sum : ",weighted_sum.numpy())  
 
-output = tf.sigmoid(weighted_sum)              # 0.93
+output = tf.sigmoid(weighted_sum)              
 
 print("Output : ",output.numpy())
