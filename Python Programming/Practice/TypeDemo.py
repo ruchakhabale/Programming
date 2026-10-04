@@ -1,7 +1,6 @@
-#Number (numeric)
-no = 11          #int
-marks = 90.78    #float
-value = 8 + 5j   #complex 
+no = 11        
+marks = 90.78   
+value = 8 + 5j  
 
 print(value)
 
