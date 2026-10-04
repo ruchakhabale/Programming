@@ -1,5 +1,5 @@
 # 6 : 1 * 2 * 3 * 4 * 5 * 6
-import time             # time naav cha module import kela (in - built module)
+import time            
 
 def Factorial(No):
     Fact = 1
@@ -21,7 +21,7 @@ def main():
 
     print(f"Factorial of {Value} is {Ret} ") 
 
-    print(f"Time required is : {end_time - start_time} seconds")    # depends on speed of cpu
+    print(f"Time required is : {end_time - start_time} seconds")   
 
 if __name__ == "__main__":
     main()
