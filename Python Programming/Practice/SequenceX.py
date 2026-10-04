@@ -1,8 +1,8 @@
-Data1 = [10, 20, 30, 40]                           #List - its like array 
-Data2 = (10, 20, 30, 40)                           #Tuple
-Data3 = {10, 20, 30, 40}                           #Set
-Data4 = {"A" : 10, "B" : 20, "C" : 30, "D" : 40}   #Dict
-Data5 = "Maharashtra"                              #Str
+Data1 = [10, 20, 30, 40]                           
+Data2 = (10, 20, 30, 40)                          
+Data3 = {10, 20, 30, 40}                          
+Data4 = {"A" : 10, "B" : 20, "C" : 30, "D" : 40}  
+Data5 = "Maharashtra"                            
 
 print(type(Data1))
 print(type(Data2))
