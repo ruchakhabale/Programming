@@ -14,7 +14,7 @@ def main():
 
     Ret = Factorial(Value) 
 
-    print(f"Factorial of {Value} is {Ret} ")    #formatted printing
+    print(f"Factorial of {Value} is {Ret} ")    
 
 if __name__ == "__main__":
     main()
