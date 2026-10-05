@@ -1,6 +1,3 @@
-# Accept : Multiple parameters 
-# Return : Multiple value
-
 def Multiplication(No1,No2):
     return No1 * No2
 
