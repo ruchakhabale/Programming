@@ -1,6 +1,3 @@
-# Accept : Multiple parameters 
-# Return : Multiple value
-
 def Marvellous(Value1, Value2):
     print("Inside Marvellous : ",Value1, Value2)
     return 21 , 51
