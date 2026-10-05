@@ -1,6 +1,3 @@
-# Accept : Nothing
-# Return : Nothing    
-
 def Marvellous():
     print("Inside Marvellous")
 
