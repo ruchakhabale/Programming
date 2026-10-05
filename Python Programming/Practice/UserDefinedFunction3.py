@@ -1,6 +1,3 @@
-# Accept : one parameter
-# Return : one value 
-
 def Marvellous(Value):
     print("Inside Marvellous : ",Value)
     return 21
