@@ -1,6 +1,3 @@
-# Accept : Multiple parameters 
-# Return : Multiple value
-# rechck once
 def Calculation(No1, No2):
     Mult = No1 * No2
     Div = No1/No2
