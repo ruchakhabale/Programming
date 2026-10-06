@@ -5,7 +5,7 @@ def Display(*Data):
 
 
 def main():
-    Display(10,False, 3.14,'Python')     #this can accept any no. of parameters 
+    Display(10,False, 3.14,'Python')     
     
 
 if __name__ == '__main__':
