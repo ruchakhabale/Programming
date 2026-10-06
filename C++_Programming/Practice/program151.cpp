@@ -1,4 +1,4 @@
-//this has error on purpose
+//error unresolved
 #include<iostream>
 using namespace std;
 
