@@ -11,11 +11,11 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Step 2 : Configuration of values
 ##########################################################
 
-VOCAB_SIZE = 10000      #consider most frequent 10000 unique words
-MAX_LENGTH = 200        #consider maximum 200 words in review
+VOCAB_SIZE = 10000      
+MAX_LENGTH = 200        
 
 ##########################################################
-# Step 3 : Load the IMDb dataset          (Internet Movie Database)
+# Step 3 : Load the IMDb dataset         
 ##########################################################
 
 print("-"*40)
@@ -66,18 +66,18 @@ for word, index in word_index.items():
     reverse_words_index[index+3] = word
 
 ###########################################################
-# Step 6 : Function to decode the review (number to word) 
+# Step 6 : Function to decode the review  
 ###########################################################
 
 def DecodeReview(encoded_review):
     words = []
 
     for number in encoded_review:
-        if number >= 3:                # ignore first 3 
+        if number >= 3:                
             word = reverse_words_index.get(number,"?")
             words.append(word)
 
-    return " ".join(words)               # join the list of words
+    return " ".join(words)               
 
 ##########################################################
 # Step 7 : Display sample reviews
@@ -129,13 +129,13 @@ model = Sequential()
 model.add(
     Embedding(
         input_dim=VOCAB_SIZE,
-        output_dim=32                 # each word is represnted in 32 values
+        output_dim=32                 
     )
 )
 
 model.add(
     LSTM(
-        units = 64   # Size of LSTM hidden state
+        units = 64  
     )
 )
 
@@ -146,18 +146,14 @@ model.add(
     )
 )
 
-# Project Architecture
-
-# Review -> Embedding -> LSTM -> Dense -> Sigmoid -> Positive / Negative
-
 ##########################################################
 # Step 10 : Compile the model
 ##########################################################
 
 model.compile(
-    optimizer="adam",                #algorithm to update the weights
-    loss = "crossentrophy",          # Loss function
-    metrics = ["accuracy"]           # measure classification accuracy
+    optimizer="adam",               
+    loss = "crossentrophy",         
+    metrics = ["accuracy"]           
 )
 
 print("Model Compiled successfully")
@@ -167,8 +163,6 @@ print("Model Compiled successfully")
 ##########################################################
 
 print("Model training")
-
-# the model gets build automatically in LSTM, unlike the RNN we need to build it explicitly
 
 model.fit(
     X_train_padded,             #Input training values
@@ -185,9 +179,9 @@ print("Model training gets completed")
 ##########################################################
 
 accuracy = model.evaluate(
-    X_test_padded,      # Testing reviews
-    Y_test,             # Actual testing labels
-    verbose = 0         # Don't display the process bar
+    X_test_padded,     
+    Y_test,            
+    verbose = 0         
 )
 
 print("Testing accuracy : ",accuracy)
@@ -196,7 +190,7 @@ print("Testing accuracy : ",accuracy)
 # Step 13 : Predict the review
 ##########################################################
 
-TEST_REVIEW_NUMBER = 12               # global variable(lly to Macro)
+TEST_REVIEW_NUMBER = 12               
 
 original_review = X_test[TEST_REVIEW_NUMBER]
 decoded_review = DecodeReview(original_review)
@@ -208,7 +202,7 @@ print(decoded_review)
 # Step 14 : Get the Actual sentiment
 ##########################################################
 
-actual_value = Y_test[TEST_REVIEW_NUMBER]       # this 12 is index
+actual_value = Y_test[TEST_REVIEW_NUMBER]      
 
 if actual_value == 1:
     actual_sentiment = "POSITIVE"
@@ -228,7 +222,7 @@ prediction = model.predict(
     verbose = 0
 )
 
-probability = prediction[0][0]           # since it is a Matric
+probability = prediction[0][0]          
 
 if probability >= 0.5:
     predicted_sentiment = "POSITIVE"
