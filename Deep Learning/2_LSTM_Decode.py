@@ -11,11 +11,11 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Step 2 : Configuration of values
 ##########################################################
 
-VOCAB_SIZE = 10000      #consider most frequent 10000 unique words
-MAX_LENGTH = 200        #consider maximum 200 words in review
+VOCAB_SIZE = 10000      
+MAX_LENGTH = 200        
 
 ##########################################################
-# Step 3 : Load the IMDb dataset          (Internet Movie Database)
+# Step 3 : Load the IMDb dataset         
 ##########################################################
 
 print("-"*40)
@@ -73,11 +73,11 @@ def DecodeReview(encoded_review):
     words = []
 
     for number in encoded_review:
-        if number >= 3:                # ignore first 3 
+        if number >= 3:                
             word = reverse_words_index.get(number,"?")
             words.append(word)
 
-    return " ".join(words)               # join the list of words
+    return " ".join(words)              
 
 ##########################################################
 # Step 7 : Display sample reviews
