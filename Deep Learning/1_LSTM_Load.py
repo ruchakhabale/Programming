@@ -11,11 +11,11 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Step 2 : Configuration of values
 ##########################################################
 
-VOCAB_SIZE = 10000      #consider most frequent 10000 unique words
-MAX_LENGTH = 200        #consider maximum 200 words in review
+VOCAB_SIZE = 10000      
+MAX_LENGTH = 200       
 
 ##########################################################
-# Step 3 : Load the IMDb dataset          (Internet Movie Database)
+# Step 3 : Load the IMDb dataset          
 ##########################################################
 
 print("-"*40)
