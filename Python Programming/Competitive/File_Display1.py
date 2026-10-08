@@ -1,4 +1,3 @@
-# 29.2
 def main():
     try:
         fobj = open("Demo.txt")
