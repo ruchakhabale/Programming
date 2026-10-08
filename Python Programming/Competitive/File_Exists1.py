@@ -1,4 +1,3 @@
-# 29.1
 import os 
 
 def main():
