@@ -6,7 +6,7 @@ float Maximum(float No1, float No2)
 {
     float Ans;
 
-    // this is a ternary operator
+    
     (No1 > No2 ) ? Ans = No1 : Ans = No2;
 };
 
