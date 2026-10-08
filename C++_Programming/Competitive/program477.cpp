@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-// rechk op 
 float Maximum(float No1, float No2)
 {
     float Ans;
