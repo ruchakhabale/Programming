@@ -18,5 +18,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-#9.2 incomplete
