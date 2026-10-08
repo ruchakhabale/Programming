@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-// rechk op 
 template<class T>
 T Maximum(T No1, T No2)
 {
