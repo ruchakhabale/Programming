@@ -1,8 +1,3 @@
-/*
-Input : my name is amit
-Output : ym eman si tima
-
-*/
 
 import java.util.*;
 
