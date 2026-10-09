@@ -9,7 +9,7 @@ class program744
         System.out.println("Enter String : ");
         String str = sobj.nextLine();
 
-        StringBuffer sb = new StringBuffer(str);        // Convert string to stringbuffer, so that we can use the reverse in-built method 
+        StringBuffer sb = new StringBuffer(str);        
 
         System.out.println(sb.reverse());
     }
