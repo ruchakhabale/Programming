@@ -1,13 +1,3 @@
-# ht = tanh(Wx*Xt + Wh * ht - 1 + b)
-
-# Xt              Current input 
-# Wx              Weight of Current input
-# Wh              Weight of previous hidden state
-# b               Bias
-# ht-1            Previous hidden state
-# tanh            Activation Function
-# ht              New Hidden State
-
 import numpy as np
 
 def sigmoid(x):
