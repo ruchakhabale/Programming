@@ -1,13 +1,3 @@
-# ht = tanh(Wx*Xt + Wh * ht - 1 + b)
-
-# Xt              Current input 
-# Wx              Weight of Current input
-# Wh              Weight of previous hidden state
-# b               Bias
-# ht-1            Previous hidden state
-# tanh            Activation Function
-# ht              New Hidden State
-
 import numpy as np
 
 def sigmoid(x):
@@ -16,12 +6,10 @@ def sigmoid(x):
 def RNNPredictions():
     print("Calculations of RNN")
 
-    # food was not good
     inputs = [1,2,5,3]
 
     hidden_state = 0
 
-    # RNN parameters
     Wx = 0.5
     Wh = 0.8
     bias = 0.1
@@ -42,7 +30,6 @@ def RNNPredictions():
         print("-"*30)
 
     print("Final Hidden State : ",hidden_state)
-
 
 
 def main():
