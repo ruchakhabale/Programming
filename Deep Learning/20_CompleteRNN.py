@@ -5,7 +5,6 @@ from  tensorflow.keras.preprocessing.sequence import pad_sequence
 from  tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Embedding, SimpleRNN, Dense
 
-# Step 1 : Load the data
 train_sentences = [
     "food was good",
     "food was bad",
@@ -36,13 +35,10 @@ train_labels = [
     0
 ]
 
-# Step 2 : Tokenization
 
 tokenizer = Tokenizer(oov_token = "<OOV>")
 
 tokenizer.fit_on_texts(train_sentences)
-
-# Step 3 : Convert Training Data into sequence
 
 train_sequence = tokenizer.text_to_sequences(train_sentences)
 
@@ -51,8 +47,6 @@ print("Training sequences : ")
 for sentence, sequence in zip(train_sentences,train_sequence):
     print(sentence," -> ", sequence)
 
-
-# Step 4 : Apply Padding
 
 max_length = 4
 
@@ -70,13 +64,10 @@ print(X_train)
 print("Training labels : ")
 print(Y_train)
 
-# Step 5 : Calculate vocabulary size
 
 vocab_size = len(tokenizer.word_index) + 1
 
 print("Vocabulary size is : ",vocab_size)
-
-# Step 6 : Build RNN Model
 
 model = Sequential()
 
@@ -102,22 +93,16 @@ model.add(
     )
 )
 
-# Step 7 : Compile the model
-
 model.compile(
     optimizer = "adam",
     loss = "binary_crossentropy",
     metrices = ["accuracy"]
 )
 
-# Step 8 : Display model
-
 model.build(input_shape = (None, max_length))
 
 print("Model Architecture")
 model.summary()
-
-# Step 9 : Train the model
 
 hisory = model.fit(
     X_train,
@@ -128,8 +113,6 @@ hisory = model.fit(
 
 print("Model Training completed")
 
-# Step 10 : Create unseen data
-
 test_sentences = [
     "service was amazing",
     "service was terrible",
@@ -137,7 +120,6 @@ test_sentences = [
     "experience was terrible"
 ]
 
-# Step 11 : convert text to sequence
 
 test_sequences = tokenizer.texts_to_sequences(test_sentences)
 
@@ -147,7 +129,6 @@ X_test = pad_sequence(
     padding = "pre"
 )
 
-# Step 12 : Predict the sentiment
 
 for text, sequence, padded in zip(test_sentences, test_sequences, X_test):
     input_data = np.array([padded])
