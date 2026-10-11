@@ -5,7 +5,6 @@ from  tensorflow.keras.preprocessing.sequence import pad_sequence
 from  tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Embedding, SimpleRNN, Dense
 
-# Step 1 : Load the data
 train_sentences = [
     "food was good",
     "food was bad",
@@ -36,13 +35,9 @@ train_labels = [
     0
 ]
 
-# Step 2 : Tokenization
-
 tokenizer = Tokenizer(oov_token = "<OOV>")
 
 tokenizer.fit_on_texts(train_sentences)
-
-# Step 3 : Convert Training Data into sequence
 
 train_sequence = tokenizer.text_to_sequences(train_sentences)
 
@@ -51,8 +46,6 @@ print("Training sequences : ")
 for sentence, sequence in zip(train_sentences,train_sequence):
     print(sentence," -> ", sequence)
 
-
-# Step 4 : Apply Padding
 
 max_length = 4
 
