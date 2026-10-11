@@ -6,17 +6,14 @@ def sigmoid(x):
 def RNNPredictions():
     print("Calculations of RNN")
 
-    # food was not good
     inputs = [1,2,5,3]
 
     hidden_state = 0
 
-    # RNN parameters
     Wx = 0.5
     Wh = 0.8
     bias = 0.1
 
-    # RNN Calculations 
     for time_step, x in enumerate(inputs):
         previous_hidden_state = hidden_state
 
@@ -32,11 +29,7 @@ def RNNPredictions():
         print("Hidden State : ",hidden_state)
         print("-"*30)
 
-    # Step 2 : Final Hidden state
     print("Final Hidden State : ",hidden_state)
-
-    # Step 3 : Output layer
-    # Output = Wy * FinalHiddenState + Output Bias
 
     Wy = 1.0
     output_bias = 0.0
