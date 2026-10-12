@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-// this is NOT function overloading, bcoz all these func are naked functions, and not inside the class
 double AdditionD(double No1, double No2)
 {
     double Ans;
