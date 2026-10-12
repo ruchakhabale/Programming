@@ -4,7 +4,7 @@ using namespace std;
 
 int Maximum(int No1, int No2)
 {
-    // rechk op
+
     if(No1 > No2)
     {
         return No1;
