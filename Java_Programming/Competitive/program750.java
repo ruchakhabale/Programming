@@ -1,11 +1,3 @@
-/*
-Find and replace the word india by bharat 
-
-Input : india is my country i live in india 
-Output : bharat is my country i live in bharat
-
-*/
-
 import java.util.*;
 
 class program750
