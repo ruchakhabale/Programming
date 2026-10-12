@@ -1,11 +1,3 @@
-/*
-Accept string from user and return the frequency of the given word
-
-Input : my name is amit school name is abhinav city name is pune 
-Output : 3
-
-*/
-
 import java.util.*;
 
 class program749
