@@ -1,18 +1,3 @@
-#----------------------------------------------------------------------------
-#   Deep learning Pipeline
-#----------------------------------------------------------------------------
-# 1. Read the data from csv
-# 2. Data analysis
-# 3. Preprocessing
-# 4. Train Test Split
-# 5. Feature Scaling
-# 6  FNN Model training
-# 7. Model evaluation
-# 9. Graphical Representation
-# 10. Model loadinf and preserve 
-# 11. Test unseen data
-#----------------------------------------------------------------------------
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
