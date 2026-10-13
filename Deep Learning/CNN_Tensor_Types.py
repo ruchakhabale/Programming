@@ -9,7 +9,6 @@ print("Vector Tensor : ",vector_tensor)
 
 matrix_tensor = tf.constant([[10,20,30],[40,50,60]])
 
-
 tensor_3d = tf.constant([
     [[1,2],[3,4]],
     [[5,5]],[6,6],
