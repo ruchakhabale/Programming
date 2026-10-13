@@ -11,4 +11,3 @@ print("Image size : ",pixels.shape)
 
 print("Pixel values : ")
 print(pixels)
-
