@@ -13,7 +13,6 @@ print("Height : ",pixels.shape[0]," Rows")
 print("Height : ",pixels.shape[1]," Columns")
 print("Channels : ",pixels.shape[2],"(R,G,B)")
 
-#        Arr[28]           [28]                  [3]
 total = pixels.shape[0] * pixels.shape[1] * pixels.shape[2]
 
 print("Total Pixels : ",total)
