@@ -17,3 +17,4 @@ def ReLU(x):
 
 Y = ReLU(Z)
 print("Y : ",Y)
+
