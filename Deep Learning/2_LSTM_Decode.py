@@ -49,12 +49,6 @@ print("Number of testing reviews : ",len(X_test))
 
 word_index = imdb.get_word_index()
 
-# Dictionary contains mapping of word amd its corresponding number
-# Drishyam is good movie    -> (20 56 78 43)
-# 20 -> Drishyam
-# 56 -> is 
-# 78 -> good
-# 43 -> movie
 
 ##########################################################
 # Step 5 : Create reverse dictionary 
