@@ -1,9 +1,5 @@
 #include<stdio.h>
 
-// chk 
-
-// .\Myexe.exe 10 11
-
 int main(int argc, char *argv[])
 {
     int Ans = 0;
