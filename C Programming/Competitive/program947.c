@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    Ans = (int)argv[1] + (int)argv[2];   // warning
+    Ans = (int)argv[1] + (int)argv[2];   
 
     printf("Addition is : %d",Ans);
 
