@@ -10,8 +10,7 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    //Ans = argv[1] + argv[2];   // Error ( as the data is char*)
-
+    
     printf("Addition is : %d",Ans);
 
     return 0;
