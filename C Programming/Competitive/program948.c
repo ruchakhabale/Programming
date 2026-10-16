@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// .\Myexe.exe 10 11
-
 int main(int argc, char *argv[])
 {
     int Ans = 0;
