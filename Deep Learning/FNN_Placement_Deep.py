@@ -121,13 +121,11 @@ Y_prob = model.predict_proba(X_test_scaled)
 
 print(Y_prob[:5])
 
-# step 8 : task assigned 
-
 #----------------------------------------------------------------------------
-# Step 9 : Model Preserve
+# Step 8 : Model Preserve
 #----------------------------------------------------------------------------
 
-print("9. Model Preserve")
+print("8. Model Preserve")
 
 joblib.dump(model,"placement_fnn_model.pkl")
 joblib.dump(scalar,"placement_scalar.pkl")
@@ -135,10 +133,10 @@ joblib.dump(scalar,"placement_scalar.pkl")
 print("Model and Scalar gets dumped successfully")
 
 #----------------------------------------------------------------------------
-# Step 10 : Model loading and Preserve
+# Step 9 : Model loading and Preserve
 #----------------------------------------------------------------------------
 
-print("10. Model loading and preserve")
+print("9. Model loading and preserve")
 
 loaded_model = joblib.load("placement_fnn_model.pkl")
 loaded_scalar = joblib.load("placement_scalar.pkl")
@@ -146,7 +144,7 @@ loaded_scalar = joblib.load("placement_scalar.pkl")
 print("Model gets loaded successfully")
 
 #----------------------------------------------------------------------------
-# Step 11 : Test unseen data
+# Step 10 : Test unseen data
 # Aptitude :       70
 # Coding :         75
 # Communication :  80 
@@ -154,7 +152,7 @@ print("Model gets loaded successfully")
 # Intership :      1
 #----------------------------------------------------------------------------
 
-print("11. Test unseen data")
+print("10. Test unseen data")
 
 new_student = pd.DataFrame([[70,75,80,85,1]], columns= ['Aptitude', 'Coding', 'Communication', 'Academics', 'Internship'])
 
