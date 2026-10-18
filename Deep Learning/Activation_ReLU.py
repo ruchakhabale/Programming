@@ -15,8 +15,6 @@ def Neuron_Forward(inputs,weights,bias):
 
     z = z + bias
 
-    #z = sum(w * x for w, x in zip(weights,inputs)) + bias
-
     print("Weighted sum : ",z)
 
     y = ReLU(z)
