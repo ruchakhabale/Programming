@@ -47,8 +47,6 @@ print(Border)
 print("Step 3 : Decide Independent and Dependent Variables")
 print(Border)
 
-# X : Independent Variable / Features
-# Y : Dependent Variable  / Labels
 
 feature_cols = [
     "sepal length (cm)",
