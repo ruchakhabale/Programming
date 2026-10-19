@@ -54,9 +54,6 @@ print(Border)
 print("Step 3 : Decide Independent and Dependent Variables")
 print(Border)
 
-# X : Independent Variable / Features
-# Y : Dependent Variable  / Labels
-
 feature_cols = [
     "sepal length (cm)",
     "sepal width (cm)",
@@ -78,7 +75,6 @@ print(Border)
 print("Step 4 : Visualization of dataset")
 print(Border)
 
-# Scatter plot
 plt.figure(figsize=(7,5))
 
 for sp in df["species"].unique():
@@ -106,14 +102,14 @@ X_train, X_test, Y_train, Y_test = train_test_split(X,Y,test_size= 0.5,random_st
 
 print("Dataset splitting activity done")
 
-print("X : ",X.shape)                # (150,4)
-print("Y : ",Y.shape)                # (150,)
+print("X : ",X.shape)              
+print("Y : ",Y.shape)                
 
-print("X_train : ",X_train.shape)    # (75,4)
-print("X_test : ",X_test.shape)      # (75,4)
+print("X_train : ",X_train.shape)   
+print("X_test : ",X_test.shape)      
 
-print("Y_train : ",Y_train.shape)    # (75, )
-print("Y_test : ",Y_test.shape)      # (75, )
+print("Y_train : ",Y_train.shape)   
+print("Y_test : ",Y_test.shape)      
 
 ##########################################################################
 # Step 6 : Build the model
