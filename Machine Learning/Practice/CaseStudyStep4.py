@@ -50,9 +50,6 @@ print(Border)
 print("Step 3 : Decide Independent and Dependent Variables")
 print(Border)
 
-# X : Independent Variable / Features
-# Y : Dependent Variable  / Labels
-
 feature_cols = [
     "sepal length (cm)",
     "sepal width (cm)",
@@ -74,7 +71,6 @@ print(Border)
 print("Step 4 : Visualization of dataset")
 print(Border)
 
-# Scatter plot
 plt.figure(figsize=(7,5))
 
 for sp in df["species"].unique():
