@@ -23,9 +23,9 @@ print(Border)
 print("Step 1 : Load the dataset")
 print(Border)
 
-DataPath = "iris.csv"              # absolute path
+DataPath = "iris.csv"             
 
-df = pd.read_csv(DataPath)           # df - dataframe
+df = pd.read_csv(DataPath)         
 
 print("Dataset loaded successfully")
 print("Initial Entries from dataset are : ")
@@ -60,9 +60,6 @@ print(df.describe())
 print(Border)
 print("Step 3 : Decide Independent and Dependent Variables")
 print(Border)
-
-# X : Independent Variable / Features
-# Y : Dependent Variable  / Labels
 
 feature_cols = [
     "sepal length (cm)",
