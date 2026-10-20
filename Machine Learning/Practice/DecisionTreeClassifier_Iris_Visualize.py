@@ -24,14 +24,11 @@ def main():
 
     print("Accuracy is : ",Result*100)
 
-    # Visualization
-
     plot_tree(model,filled=True, feature_names= iris_data.feature_names, class_names=iris_data.target_names)
 
     plt.title("Decision  tree ")
 
     plt.show()
-
 
 
 if __name__ == "__main__":
