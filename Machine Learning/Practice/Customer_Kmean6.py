@@ -36,7 +36,7 @@ def main():
 
     for k in range(1,11):
         model = KMeans(
-            n_clusters= k,            # Hyper parameter set
+            n_clusters= k,           
             random_state=42,
             n_init=10,
         )
@@ -61,7 +61,7 @@ def main():
     # Step 6 : Final Model
 
     model = KMeans(
-                n_clusters= 4,            # Hyper parameter set
+                n_clusters= 4,          
                 random_state=42,
                 n_init=10,
             )
