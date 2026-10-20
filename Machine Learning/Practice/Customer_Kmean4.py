@@ -36,7 +36,7 @@ def main():
 
     for k in range(1,11):
         model = KMeans(
-            n_clusters= k,            # Hyper parameter set
+            n_clusters= k,         
             random_state=42,
             n_init=10,
         )
