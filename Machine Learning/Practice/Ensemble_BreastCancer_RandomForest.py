@@ -51,7 +51,7 @@ X_test = scalar.fit_transform(X_test)
 # -------------------------------------------------------------------
 
 model = RandomForestClassifier(
-    n_estimators=10,                           # this creates 10 diff Decision trees
+    n_estimators=10,                           
     random_state=42
     )
 
