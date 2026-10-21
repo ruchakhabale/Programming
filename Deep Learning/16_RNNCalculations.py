@@ -43,7 +43,6 @@ def RNNPredictions():
 
     print("Probability is : ",probability)
 
-
 def main():
     RNNPredictions()
 
