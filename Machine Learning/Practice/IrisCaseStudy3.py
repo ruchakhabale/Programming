@@ -7,7 +7,6 @@ def main():
 
     Dataset = load_iris()              
 
-    # MetaData of the dataset
     print("Independent Variables are : ")
     print(Dataset.feature_names)
     print("Length of Independent Variable : ",len(Dataset.feature_names))
