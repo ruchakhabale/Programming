@@ -5,7 +5,7 @@ def main():
     print("Iris Classification Case study")
     print("-"*50)
 
-    Dataset = load_iris()              # load_iris is a function
+    Dataset = load_iris()             
 
     print(Dataset)
 
