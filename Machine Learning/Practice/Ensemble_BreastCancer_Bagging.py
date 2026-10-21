@@ -58,7 +58,7 @@ base_model = DecisionTreeClassifier(random_state=42)
 # -------------------------------------------------------------------
 
 model = BaggingClassifier(
-    estimator=base_model,                # this gives homogeneous ensemble (Decision Tree Classifier) 
+    estimator=base_model,               
     n_estimators=10,
     random_state=42
 )
