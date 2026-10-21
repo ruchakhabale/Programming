@@ -7,9 +7,7 @@ def NaturalSum(No):
             No = Sum + No 
                  
     return Sum
-    
-        
-    
+
 
 def main():
     Value = int(input("Enter your number : "))
