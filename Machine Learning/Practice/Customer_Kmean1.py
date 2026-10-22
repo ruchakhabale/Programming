@@ -8,7 +8,7 @@ def main():
     # Step 1  : Load the data
 
     df = pd.read_csv("Mall_Customers.csv")
-
+    
     print("Dataset loaded successfully")
     print(df.head())
 
