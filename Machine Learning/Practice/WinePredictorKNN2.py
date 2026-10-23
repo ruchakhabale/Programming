@@ -28,7 +28,7 @@ def Classifier(Datapath):
     print("Step 2: Clean the dataset")
     print(border)
 
-    df.dropna(inplace= True)  # missing value udun takto from dataframes
+    df.dropna(inplace= True) 
 
     print("Shape of dataset: ", df.shape)
     print("Total records: ", df.shape[0])
