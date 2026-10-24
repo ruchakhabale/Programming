@@ -10,10 +10,10 @@ def KNNClassifier():
     border = "-"*40
 
     Data = [
-        {'point' : 'A', 'X' : 1, 'Y' : 2, 'label' : 'Red'},        # Data[0]
-        {'point' : 'B', 'X' : 2, 'Y' : 3, 'label' : 'Red'},        # Data[1]
-        {'point' : 'C', 'X' : 3, 'Y' : 1, 'label' : 'Blue'},       # Data[2]
-        {'point' : 'D', 'X' : 5, 'Y' : 6, 'label' : 'Blue'}        # Data[3]
+        {'point' : 'A', 'X' : 1, 'Y' : 2, 'label' : 'Red'},       
+        {'point' : 'B', 'X' : 2, 'Y' : 3, 'label' : 'Red'},        
+        {'point' : 'C', 'X' : 3, 'Y' : 1, 'label' : 'Blue'},       
+        {'point' : 'D', 'X' : 5, 'Y' : 6, 'label' : 'Blue'}        
     ]
 
     print(border)
