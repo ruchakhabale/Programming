@@ -17,7 +17,7 @@ def KNNClassifier():
     ]
 
     print(border)
-    print("Marvellous KNN Classifier")
+    print("KNN Classifier")
     print(border)
 
     for i in Data:
