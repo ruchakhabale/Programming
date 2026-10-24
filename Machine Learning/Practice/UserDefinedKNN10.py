@@ -9,7 +9,6 @@ def EucDistance(P1, P2):
 def KNNClassifier(k = 3):
     border = "-"*40
 
-    # List of dictionaries 
     Data = [
         {'point' : 'A', 'X' : 1, 'Y' : 2, 'label' : 'Red'},        
         {'point' : 'B', 'X' : 2, 'Y' : 3, 'label' : 'Red'},        
@@ -51,7 +50,7 @@ def KNNClassifier(k = 3):
 
     print(border)
 
-    nearest = sorted_data[:k]     # slicing 
+    nearest = sorted_data[:k]     
 
     print(border)
     print("Nearest 3 members are : ")
@@ -62,7 +61,6 @@ def KNNClassifier(k = 3):
 
     print(border)
 
-    # Voting 
     votes = {}
 
     for neighbours in nearest:
