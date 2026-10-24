@@ -1,7 +1,6 @@
 def KNNClassifier():
     border = "-"*40
-
-    # List of dictionaries 
+    
     Data = [
         {'point' : 'A', 'X' : 1, 'Y' : 2, 'label' : 'Red'},
         {'point' : 'B', 'X' : 2, 'Y' : 3, 'label' : 'Red'},
@@ -10,7 +9,7 @@ def KNNClassifier():
     ]
 
     print(border)
-    print("Marvellous KNN Classifier")
+    print("KNN Classifier")
     print(border)
 
     for i in Data:
