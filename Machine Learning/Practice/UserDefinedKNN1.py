@@ -1,7 +1,6 @@
-def MarvellousKNNClassifier():
+def KNNClassifier():
     border = "-"*40
 
-    # List of dictionaries 
     Data = [
         {'point' : 'A', 'X' : 1, 'Y' : 2, 'label' : 'Red'},
         {'point' : 'B', 'X' : 2, 'Y' : 3, 'label' : 'Red'},
@@ -10,7 +9,7 @@ def MarvellousKNNClassifier():
     ]
 
     print(border)
-    print("Marvellous KNN Classifier")
+    print("KNN Classifier")
     print(border)
 
     print(Data)
@@ -18,7 +17,7 @@ def MarvellousKNNClassifier():
     print(border)
 
 def main():
-    MarvellousKNNClassifier()
+    KNNClassifier()
 
 if __name__ == "__main__":
     main()
