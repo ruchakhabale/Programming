@@ -9,7 +9,6 @@ def EucDistance(P1, P2):
 def KNNClassifier():
     border = "-"*40
 
-    # List of dictionaries 
     Data = [
         {'point' : 'A', 'X' : 1, 'Y' : 2, 'label' : 'Red'},        # Data[0]
         {'point' : 'B', 'X' : 2, 'Y' : 3, 'label' : 'Red'},        # Data[1]
