@@ -2,18 +2,17 @@
 
 struct node
 {
-    int data;  // 4
-    struct node * next;  // 8
+    int data;  
+    struct node * next;  
 
 };
 
 int main()
 {
-    struct node obj;          //Object of structure
+    struct node obj;      
 
-    printf("%d\n",sizeof(obj));  // 16 (irrespective of what my op is bcoz it is Platform and Architecture dependent )
-    // 4(int) + 4(padding) + 8(pointer)
-
+    printf("%d\n",sizeof(obj));  
+ 
 
     return 0;
 }
