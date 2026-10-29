@@ -4,14 +4,14 @@
 
 struct node
 {
-    int data;  // 4
-    struct node * next;  // 8
+    int data;  
+    struct node * next; 
 
 };
 
 int main()
 {
-    struct node *head = NULL;   // very imp pointer for Linked List
+    struct node *head = NULL;  
     struct node obj1, obj2,obj3;  
 
     head = &obj1;                             
@@ -26,9 +26,9 @@ int main()
     obj3.next = NULL;    
         
 
-    printf("%d\n",head->data);                      // 11
-    printf("%d\n",head->next->data);                // 21
-    printf("%d\n",head->next->next->data);          // 51
+    printf("%d\n",head->data);                     
+    printf("%d\n",head->next->data);                
+    printf("%d\n",head->next->next->data);          
    
     return 0;
 }
