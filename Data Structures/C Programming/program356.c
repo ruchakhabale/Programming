@@ -14,17 +14,17 @@ int main()
     struct node obj1, obj2,obj3;                               
 
     obj1.data = 11;
-    obj1.next = &obj2;    // 200
+    obj1.next = &obj2;    
 
     obj2.data = 21;
-    obj2.next = &obj3;   // 300
+    obj2.next = &obj3;   
 
     obj3.data = 51;
-    obj3.next = NULL;    //last node so NULL
+    obj3.next = NULL;  
 
-    printf("%u\n",&obj1);                // 100
-    printf("%u\n",&obj2);                // 200
-    printf("%u\n",&obj3);                // 300
+    printf("%u\n",&obj1);                
+    printf("%u\n",&obj2);               
+    printf("%u\n",&obj3);                
 
     printf("%u\n",obj1.next);             
     printf("%u\n",obj2.next);            
