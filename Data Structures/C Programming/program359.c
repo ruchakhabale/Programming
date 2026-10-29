@@ -9,11 +9,11 @@ struct node
 };
 
 typedef struct node NODE;
-typedef struct node * PNODE;    // due to this line, the * gets invisible only symbollically throughout program, logically it is present inside PNODE typedef
+typedef struct node * PNODE;    
 
 int main()
 {
-    PNODE head = NULL;   // very imp pointer for Linked List
+    PNODE head = NULL;   
     NODE obj1, obj2,obj3;  
 
     head = &obj1;                             
@@ -28,9 +28,9 @@ int main()
     obj3.next = NULL;    
         
 
-    printf("%d\n",head->data);                      // 11
-    printf("%d\n",head->next->data);                // 21
-    printf("%d\n",head->next->next->data);          // 51
+    printf("%d\n",head->data);                     
+    printf("%d\n",head->next->data);               
+    printf("%d\n",head->next->next->data);          
    
     return 0;
 }
