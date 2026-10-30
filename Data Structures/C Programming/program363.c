@@ -4,8 +4,8 @@
 
 struct node
 {
-    int data;  // 4
-    struct node * next;  // 8
+    int data; 
+    struct node * next; 
 };
 
 typedef struct node NODE;
@@ -14,7 +14,7 @@ typedef struct node * PNODE;
 int main()
 {
     PNODE head = NULL;   
-    PNODE temp = NULL;  // zerox pointer aahe haa, hyachya mule head pointer madhe kahi farak padat nahi
+    PNODE temp = NULL; 
 
     int iCount = 0;
 
@@ -31,18 +31,14 @@ int main()
     obj3.data = 51;
     obj3.next = NULL;  
     
-    temp = head;   // 100  (this is also pointing to 100 only just like the head pointer)
-
-    // Iteration
-    // Time Complexity :  (N)
+    temp = head;  
 
     while(temp != NULL)
     {
-        iCount++;          // our usual counter   
-        temp = temp -> next;                          // lly to temp++  
+        iCount++;        
+        temp = temp -> next;                          
     }
     printf("Number of Nodes are : %d\n",iCount);
      
     return 0;
 }
-
