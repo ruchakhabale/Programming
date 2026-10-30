@@ -14,7 +14,7 @@ typedef struct node * PNODE;
 int main()
 {
     PNODE head = NULL;   
-    PNODE temp = NULL;  // temporary like zerox pointer of head pointer
+    PNODE temp = NULL;  
 
     NODE obj1, obj2, obj3;  
 
@@ -29,12 +29,12 @@ int main()
     obj3.data = 51;
     obj3.next = NULL;  
     
-    temp = head;   // this is also pointing to 100 only just like the head pointer
+    temp = head;   
         
 
-    printf("%d\n",temp->data);                      // 11
-    printf("%d\n",temp->next->data);                // 21
-    printf("%d\n",temp->next->next->data);          // 51
+    printf("%d\n",temp->data);                      
+    printf("%d\n",temp->next->data);                
+    printf("%d\n",temp->next->next->data);          
    
     return 0;
 }
