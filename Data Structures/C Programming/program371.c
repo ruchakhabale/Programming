@@ -1,8 +1,3 @@
-/*
-IN INTERVIEW they expect you to know the diagram so focus more on the understanding of the concept not 
-the syntax, concept is given more importance
-*/
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -25,22 +20,21 @@ int Count(PNODE first)
     return 0;
 }
 
-// &head, data (shirt var cha no) i.e. PPNODE first, int iNo  these 2 are given as parameters to Insert
 void InsertFirst(PPNODE first, int iNo)
 {
-    PNODE newn = NULL;   // ethe pointer banla
+    PNODE newn = NULL;   
 
-    newn = (PNODE) malloc(sizeof(NODE));   // ethe node banla
+    newn = (PNODE) malloc(sizeof(NODE)); 
 
     newn->data = iNo;
     newn->next = NULL;
 
-    if(*first == NULL)          // L.L. is empty        // *first mhnje head kade point karnara varcha pointer( our board var cha diagram)
+    if(*first == NULL)         
     {
         *first = newn;
 
     }
-    else                        // L.L. contains ATLEAST ONE NODE
+    else                        
     {
         newn->next = *first;
         *first = newn;
@@ -49,19 +43,19 @@ void InsertFirst(PPNODE first, int iNo)
 
 void InsertLast(PPNODE first, int iNo)
 {
-    PNODE newn = NULL;   // ethe pointer banla
+    PNODE newn = NULL;   
 
-    newn = (PNODE) malloc(sizeof(NODE));   // ethe node banla
+    newn = (PNODE) malloc(sizeof(NODE));   
 
     newn->data = iNo;
     newn->next = NULL;
 
-    if(*first == NULL)          // L.L. is empty        // *first mhnje head kade point karnara varcha pointer( our board var cha diagram)
+    if(*first == NULL)          
     {
         *first = newn;
 
     }
-    else                        // L.L. contains ATLEAST ONE NODE
+    else                     
     {
     }
 
@@ -70,7 +64,6 @@ void InsertLast(PPNODE first, int iNo)
 void InsertAtPos(PPNODE first, int iNo, int iPos)
 {}
 
-// Delete karnarya la Data chi garaj NAHI so only &head i.e. PPNODE first is given as parameter to Delete
 void DeleteFirst(PPNODE first)
 {}
 
@@ -84,7 +77,6 @@ int main()
 {
     PNODE head = NULL;
 
-    // if else mule tee ulta order madhe lihaycha, just so that it gets in the same order as we want it to be 
     InsertFirst(&head,101);     
     InsertFirst(&head,51);
     InsertFirst(&head,21);
