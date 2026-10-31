@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#pragma pack(1)    // concept of this is same in c and c++
+#pragma pack(1)    
 struct node
 {
     int data;
@@ -15,10 +15,10 @@ typedef struct node ** PPNODE;
 class SinglyLL
 {
     public:
-        PNODE first;    // pointer aahe, C madhlya main madhla head is ethe class madhla first
+        PNODE first;    
         int iCount;
 
-        SinglyLL()      // default constructor
+        SinglyLL()      
         {
             
             this->first = NULL;
@@ -35,18 +35,3 @@ int main()
     
     return 0;
 }
-
-
-
-/*
-singly ll - linear linked list
-singly cl - circular linked list
-
-doubly ll - linear linked list
-doubly cl - circular linked list
-
-object chya aat madhla access kartana hee use karycha:
-self. in Python is lly to this. in Java and this-> in C++
-jar characteristics non static astil tar
-
-*/
