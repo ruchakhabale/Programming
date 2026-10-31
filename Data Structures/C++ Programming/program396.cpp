@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#pragma pack(1)    // concept of this is same in c and c++
+#pragma pack(1)    
 struct node
 {
     int data;
@@ -10,7 +10,7 @@ struct node
 
 typedef struct node NODE;
 typedef struct node * PNODE;
-typedef struct node ** PPNODE;  // this is not going to be used bcoz we are not going to send **first here in C++
+typedef struct node ** PPNODE;  
 
 int main()
 {
