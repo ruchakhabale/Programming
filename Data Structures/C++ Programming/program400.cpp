@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#pragma pack(1)    // concept of this is same in c and c++
+#pragma pack(1)    +
 struct node
 {
     int data;
@@ -15,10 +15,10 @@ typedef struct node ** PPNODE;
 class SinglyLL
 {
     public:
-        PNODE first;    // pointer aahe, C madhlya main madhla head is ethe class madhla first
+        PNODE first;   
         int iCount;
 
-        SinglyLL()      // default constructor
+        SinglyLL()      
         {
             
             this->first = NULL;
@@ -30,10 +30,8 @@ int main()
 {
     SinglyLL sobj;       
     
-    // if 5 nodes are present
-
-    sobj.first = NULL;      // DRAWBACK
-    sobj.iCount = 15;       // DRAWBACK
+    sobj.first = NULL;      
+    sobj.iCount = 15;    
 
     
     return 0;
