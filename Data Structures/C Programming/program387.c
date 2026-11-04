@@ -30,9 +30,9 @@ void InsertFirst(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;          
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)          
     {
         *first = newn;
     }
