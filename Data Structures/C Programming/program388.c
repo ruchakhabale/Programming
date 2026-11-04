@@ -1,5 +1,3 @@
-// $ lines having this sign are for Doubly Linear List
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -32,21 +30,19 @@ void InsertFirst(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;          
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)             
     {
         *first = newn;
     }
     else
     {
         newn->next =  *first;              
-        (*first)->prev = newn;                // $    100 chya previous madhe newn chi value yenar
-        *first = newn;                        // sirana sangch kii mulachya shirt cha var cha no kyy aahe tee
+        (*first)->prev = newn;                
+        *first = newn;                       
 
     }
-
-
 }
 
 void InsertLast(PPNODE first, int iNo)
@@ -58,15 +54,15 @@ void InsertLast(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;          
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)            
     {
         *first = newn;
     }
     else
     {
-      temp = *first;       // temp madhe 100 aala
+      temp = *first;       
        
       
       while(temp->next != NULL)
@@ -75,7 +71,7 @@ void InsertLast(PPNODE first, int iNo)
       }
       
       temp->next = newn;
-      newn->prev = temp;          // $
+      newn->prev = temp;          
     }
 }
 
@@ -106,8 +102,3 @@ int main()
 
     return 0 ;
 }
-
-// types of while loops:
-// NULL type 1
-// 500 la type 2
-// 400 la type 3
