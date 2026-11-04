@@ -1,12 +1,3 @@
-/*
-FINAL PROGRAM OF ALL 8 FUNCTIONS
-
-IN INTERVIEW they expect you to know the diagram so focus more on the understanding of the concept not 
-the syntax, concept is given more importance
-
-visual beautificaton of the L.L.
-*/
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -23,10 +14,10 @@ typedef struct node ** PPNODE;
 
 void Display(PNODE first)
 {
-    while (first != NULL)         //  Type 1 of while          // can also be written as : while (first != NULL) not prefferable
+    while (first != NULL)        
     {
         printf("| %d | -> ",first->data);
-        first = first->next;       // first la (i.e. pointer la )  pude jaa sangnya sathi hii line
+        first = first->next;     
     }
 
     printf("NULL\n");
@@ -36,33 +27,31 @@ int Count(PNODE first)
 {
     int iCount = 0;
 
-    while( first != NULL)     //  Type 1 of while        // can also be written as : while (first != NULL) not prefferable
+    while( first != NULL)     
     {
         iCount++;
-        first = first -> next;      // first la (i.e. pointer la )  pude jaa sangnya sathi hii line
+        first = first -> next;    
     }
 
     return iCount;
 
 }
 
-// &head, data (shirt var cha no) i.e. PPNODE first, int iNo  these 2 are given as parameters to Insert
 void InsertFirst(PPNODE first, int iNo)
 {
-    PNODE newn = NULL;   // ethe pointer banla
+    PNODE newn = NULL;  
 
-    newn = (PNODE) malloc(sizeof(NODE));   // ethe node banla
+    newn = (PNODE) malloc(sizeof(NODE));   
 
     newn->data = iNo;
     newn->next = NULL;
 
-    // below and this if(*first == NULL)  both will work same only but USE THIS IN THE INTERVIEW, ITS UNIQUE
-    if( NULL == *first )          // L.L. is empty        // *first mhnje head kade point karnara varcha pointer( our board var cha diagram)
+    if( NULL == *first )        
     {
         *first = newn;
 
     }
-    else                        // L.L. contains ATLEAST ONE NODE
+    else                       
     {
         newn->next = *first;
         *first = newn;
@@ -72,24 +61,24 @@ void InsertFirst(PPNODE first, int iNo)
 
 void InsertLast(PPNODE first, int iNo)
 {
-    PNODE newn = NULL;   // ethe pointer banla
-    PNODE temp = NULL;   // head pointer cha zerox pointer
+    PNODE newn = NULL;  
+    PNODE temp = NULL;  
 
-    newn = (PNODE) malloc(sizeof(NODE));   // ethe node banla
+    newn = (PNODE) malloc(sizeof(NODE));   
 
     newn->data = iNo;
     newn->next = NULL;
 
-    if(*first == NULL)          // L.L. is empty        // *first mhnje head kade point karnara varcha pointer( our board var cha diagram)
+    if(*first == NULL)         
     {
         *first = newn;
 
     }
-    else                        // L.L. contains ATLEAST ONE NODE
+    else                       
     {
-        temp = *first;     // head pointer cha zerox pointer
+        temp = *first;    
 
-        while(temp->next != NULL)     // Type 2 of while
+        while(temp->next != NULL)   
         {
             temp = temp -> next;
 
@@ -109,9 +98,9 @@ void InsertAtPos(PPNODE first, int iNo, int iPos)
     PNODE temp = NULL;
     
 
-    iCount = Count(*first);   // CallbyValue Count naava chi method aahe
+    iCount = Count(*first); 
 
-    if((iPos < 1) || (iPos > iCount + 1))            // iPos < 1 -- mhnje negative asel tar ani iCount + 1 for deletion purpose
+    if((iPos < 1) || (iPos > iCount + 1))            
     {
         printf("Invalid Position \n");
         return;
@@ -119,11 +108,11 @@ void InsertAtPos(PPNODE first, int iNo, int iPos)
 
     if(iPos == 1)
     {
-        InsertFirst(first,iNo);               // ethe first aahe *first nahi
+        InsertFirst(first,iNo);               
     }
     else if(iPos == iCount + 1)
     {
-        InsertLast(first,iNo);               // ethe first aahe *first nahi
+        InsertLast(first,iNo);              
     }
     else
     {
@@ -132,37 +121,36 @@ void InsertAtPos(PPNODE first, int iNo, int iPos)
         newn->data = iNo;
         newn->next = NULL;
 
-        temp = *first;    // temp madhe 100 aala
+        temp = *first;    
 
         for(i = 1; i < iPos-1; i++)
         {
             temp = temp->next;
         }
 
-        newn->next = temp->next;       // Right side node connect
-        temp->next = newn;             // Left side node connect
+        newn->next = temp->next;       
+        temp->next = newn;            
     }
 }
 
-// Delete karnarya la Data chi garaj NAHI so only &head i.e. PPNODE first is given as parameter to Delete
 void DeleteFirst(PPNODE first)
 {
     PNODE temp = NULL;
 
-    if(*first == NULL)                     // LL is empty
+    if(*first == NULL)                     
     {
         return;
     }
-    else if((*first) ->next == NULL)        // LL contains ONLY 1 node  writing (*first) in bracket is imp here as -> is also present in the same line
+    else if((*first) ->next == NULL)        
     {
         free(*first);
-        *first = NULL;                   // head madhe NULL taknya sathi hii line
+        *first = NULL;                  
     }
-    else                                  // LL contains more than 1 node
+    else                                  
     {
-        temp = *first;    // hya mule 100 aala 
-        *first = (*first)->next;    // hya mule 200 aala 
-        free(temp);  // hya mule temp madhe aslela 100 wala node free zala  
+        temp = *first;    
+        *first = (*first)->next;    
+        free(temp);  
     }
 }
 
@@ -170,20 +158,20 @@ void DeleteLast(PPNODE first)
 {
     PNODE temp = NULL;
 
-    if(*first == NULL)                     // LL is empty
+    if(*first == NULL)                    
     {
         return;
     }
-    else if((*first) ->next == NULL)        // LL contains ONLY 1 node  writing (*first) in bracket is imp here as -> is also present in the same line
+    else if((*first) ->next == NULL)       
     {
         free(*first);
-        *first = NULL;                   // head madhe NULL taknya sathi hii line
+        *first = NULL;                  
     }
-    else                                  // LL contains more than 1 node
+    else                               
     {
         temp = *first;
 
-        while(temp->next->next != NULL)    // //  Type 3 of while
+        while(temp->next->next != NULL) 
         {
             temp = temp ->next;
         }
@@ -202,9 +190,9 @@ void DeleteAtPos(PPNODE first, int iPos)
     PNODE temp = NULL;
     PNODE target = NULL;
 
-    iCount = Count(*first);   // CallbyValue Count naava chi method aahe
+    iCount = Count(*first);   
 
-    if((iPos < 1) || (iPos > iCount ))            // iPos < 1 -- mhnje negative asel tar ani iCount + 1 for deletion purpose
+    if((iPos < 1) || (iPos > iCount ))           
     {
         printf("Invalid Position \n");
         return;
@@ -212,15 +200,15 @@ void DeleteAtPos(PPNODE first, int iPos)
 
     if(iPos == 1)
     {
-        DeleteFirst(first);               // ethe first aahe *first nahi
+        DeleteFirst(first);              
     }
     else if(iPos == iCount)
     {
-        DeleteLast(first);               // ethe first aahe *first nahi
+        DeleteLast(first);              
     }
     else
     {
-        temp = *first;       // temp madhe 100 aala
+        temp = *first;       
 
         for(i = 1; i < iPos-1; i++)
         {
@@ -242,7 +230,6 @@ int main()
     PNODE head = NULL;
     int iRet = 0;
 
-    // InsertFirst aslyamule tee first first la insert karat janar ji ulta order hote,so to get in the same order as we want it to be, write it ulta 
     InsertFirst(&head,101);     
     InsertFirst(&head,51);
     InsertFirst(&head,21);
@@ -275,7 +262,7 @@ int main()
 
     printf("Number of nodes are : %d\n",iRet);
 
-    InsertAtPos(&head,105,4);          // &head - 100, 105 - data (shirt cha no), 4 - iPos i.e. position
+    InsertAtPos(&head,105,4);       
 
     Display(head);
     iRet = Count(head);
