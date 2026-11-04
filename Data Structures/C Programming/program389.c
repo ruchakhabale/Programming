@@ -6,7 +6,7 @@ struct node
 {
     int data;
     struct node *next;
-    struct node *prev;      // $
+    struct node *prev;      
 };
 
 typedef struct node NODE;
@@ -39,7 +39,7 @@ void InsertFirst(PPNODE first, int iNo)
 
     newn->data = iNo;
     newn->next = NULL;
-    newn->prev = NULL;      // $
+    newn->prev = NULL;      
 
     if(NULL == *first)
     {
@@ -48,7 +48,7 @@ void InsertFirst(PPNODE first, int iNo)
     else
     {
         newn->next = *first;
-        (*first)->prev = newn;      // $
+        (*first)->prev = newn;      
         *first = newn;
     }
 }
@@ -62,7 +62,7 @@ void InsertLast(PPNODE first, int iNo)
 
     newn->data = iNo;
     newn->next = NULL;
-    newn->prev = NULL;      // $
+    newn->prev = NULL;     
 
     if(NULL == *first)
     {
@@ -78,7 +78,7 @@ void InsertLast(PPNODE first, int iNo)
         }
 
         temp->next = newn;
-        newn->prev = temp;      // $
+        newn->prev = temp;      
     }
 }
 
