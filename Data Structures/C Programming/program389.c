@@ -1,0 +1,123 @@
+// $ lines having this sign are for Doubly Linear List
+// chk which tu update
+#include<stdio.h>
+#include<stdlib.h>
+
+#pragma pack(1)
+struct node
+{
+    int data;
+    struct node *next;
+    struct node *prev;
+
+};
+
+typedef struct node NODE;
+typedef struct node * PNODE;
+typedef struct node ** PPNODE;
+
+int Count(PNODE first)
+{
+    return 0;
+}
+
+void Display(PNODE first)
+{
+    printf("\nNULL");           // to indicate that the prev pointer of first node is NULL 
+    while(first != NULL)
+    {
+        printf("| %d | <=> ",first->data);
+        first = first -> next;
+    }
+    printf("NULL\n");
+}
+
+void InsertFirst(PPNODE first, int iNo)
+{
+    PNODE newn = NULL;
+
+    newn = (PNODE) malloc(sizeof(NODE));
+
+    newn -> data = iNo;
+    newn ->next = NULL;
+    newn -> prev = NULL;          //$
+
+    if(NULL == *first)             // LL is empty
+    {
+        *first = newn;
+    }
+    else
+    {
+        newn->next =  *first;              
+        (*first)->prev = newn;                // $    100 chya previous madhe newn chi value yenar
+        *first = newn;                        // sirana sangch kii mulachya shirt cha var cha no kyy aahe tee
+    }
+}
+
+void InsertLast(PPNODE first, int iNo)
+{
+    PNODE newn = NULL;
+    PNODE temp = NULL;
+
+    newn = (PNODE) malloc(sizeof(NODE));
+
+    newn -> data = iNo;
+    newn ->next = NULL;
+    newn -> prev = NULL;          //$
+
+    if(NULL == *first)             // LL is empty
+    {
+        *first = newn;
+    }
+    else
+    {
+      temp = *first;       // temp madhe 100 aala
+       
+      
+      while(temp->next != NULL)
+      {
+        temp = temp->next;
+      }
+      
+      temp->next = newn;
+      newn->prev = temp;          // $
+    }
+}
+
+void InsertAtPos(PPNODE first, int iNo, int iPos)
+{}
+
+void DeleteFirst(PPNODE first)
+{}
+
+void DeleteLast(PPNODE first)
+{}
+
+void DeleteAtPos(PPNODE first, int iPos)
+{}
+
+int main()
+{
+    PNODE head = NULL;
+
+    InsertFirst(&head,51);
+    InsertFirst(&head,21);
+    InsertFirst(&head,11);
+
+    InsertLast(&head,101);
+    InsertLast(&head,111);
+    InsertLast(&head,121);
+
+    Display(head);
+   
+
+
+    return 0 ;
+}
+
+
+
+// types of while loops:
+// NULL type 1
+// 500 la type 2
+// 400 la type 3
