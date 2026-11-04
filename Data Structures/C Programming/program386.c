@@ -1,5 +1,3 @@
-// $ lines having this sign are for Doubly Linear List
-
 #include<stdio.h>
 #include<stdlib.h>
 
