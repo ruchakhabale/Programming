@@ -1,6 +1,3 @@
-// Doubly LL starts from here (Doubly Linear Linked list) 
-//$ lines having this sign are for Doubly Linear List
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -20,7 +17,7 @@ typedef struct node ** PPNODE;
 
 int main()
 {
-    printf("%d\n",sizeof(NODE));     // 20 bytes expected
+    printf("%d\n",sizeof(NODE));    
 
 
     return 0 ;
