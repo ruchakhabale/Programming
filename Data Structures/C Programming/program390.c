@@ -1,21 +1,17 @@
-// $ lines having this sign are for Doubly Linear List
-// chk which tu update
-
 #include<stdio.h>
 #include<stdlib.h>
 
-#pragma pack(1)
+# pragma pack(1)
 struct node
 {
     int data;
     struct node *next;
-    struct node *prev;
-
+    struct node *prev;      // $
 };
 
 typedef struct node NODE;
-typedef struct node * PNODE;
-typedef struct node ** PPNODE;
+typedef struct node* PNODE;
+typedef struct node** PPNODE;
 
 int Count(PNODE first)
 {
@@ -32,13 +28,14 @@ int Count(PNODE first)
 
 void Display(PNODE first)
 {
-    printf("\nNULL");           // to indicate that the prev pointer of first node is NULL i.e. 100 chya prev is NULL
+    printf("\nNULL <=> ");
 
     while(first != NULL)
     {
         printf("| %d | <=> ",first->data);
         first = first -> next;
     }
+
     printf("NULL\n");
 }
 
@@ -46,21 +43,21 @@ void InsertFirst(PPNODE first, int iNo)
 {
     PNODE newn = NULL;
 
-    newn = (PNODE) malloc(sizeof(NODE));
+    newn = (PNODE)malloc(sizeof(NODE));
 
-    newn -> data = iNo;
-    newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn->data = iNo;
+    newn->next = NULL;
+    newn->prev = NULL;      // $
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)
     {
         *first = newn;
     }
     else
     {
-        newn->next =  *first;              
-        (*first)->prev = newn;                // $    100 chya previous madhe newn chi value yenar
-        *first = newn;                        // sirana sangch kii mulachya shirt cha var cha no kyy aahe tee
+        newn->next = *first;
+        (*first)->prev = newn;      // $
+        *first = newn;
     }
 }
 
@@ -69,28 +66,27 @@ void InsertLast(PPNODE first, int iNo)
     PNODE newn = NULL;
     PNODE temp = NULL;
 
-    newn = (PNODE) malloc(sizeof(NODE));
+    newn = (PNODE)malloc(sizeof(NODE));
 
-    newn -> data = iNo;
-    newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn->data = iNo;
+    newn->next = NULL;
+    newn->prev = NULL;      // $
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)
     {
         *first = newn;
     }
     else
     {
-      temp = *first;       // temp madhe 100 aala
-       
-      
-      while(temp->next != NULL)
-      {
-        temp = temp->next;
-      }
-      
-      temp->next = newn;
-      newn->prev = temp;          // $
+        temp = *first;
+        
+        while(temp -> next != NULL)
+        {
+            temp = temp->next;
+        }
+
+        temp->next = newn;
+        newn->prev = temp;      // $
     }
 }
 
@@ -114,20 +110,16 @@ int main()
     InsertFirst(&head,51);
     InsertFirst(&head,21);
     InsertFirst(&head,11);
-
+    
     InsertLast(&head,101);
     InsertLast(&head,111);
     InsertLast(&head,121);
-
+    
     Display(head);
 
     iRet = Count(head);
+
     printf("Number of elements are : %d\n",iRet);
-
-    return 0 ;
+    
+    return 0;
 }
-
-// types of while loops:
-// NULL type 1
-// 500 la type 2
-// 400 la type 3
