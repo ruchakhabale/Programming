@@ -1,5 +1,3 @@
-// $ lines having this sign are for Doubly Linear List
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -41,8 +39,8 @@ void InsertFirst(PPNODE first, int iNo)
     else
     {
         newn->next =  *first;              
-        (*first)->prev = newn;                // $    100 chya previous madhe newn chi value yenar
-        *first = newn;                        // sirana sangch kii mulachya shirt cha var cha no kyy aahe tee
+        (*first)->prev = newn;                
+        *first = newn;                       
 
     }
 
@@ -57,9 +55,9 @@ void InsertLast(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;         
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)            
     {
         *first = newn;
     }
