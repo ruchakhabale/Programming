@@ -1,5 +1,3 @@
-// $ lines having this sign are for Doubly Linear List
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -31,7 +29,7 @@ int Count(PNODE first)
 
 void Display(PNODE first)
 {
-    printf("\nNULL");           // to indicate that the prev pointer of first node is NULL i.e. 100 chya prev is NULL
+    printf("\nNULL");          
 
     while(first != NULL)
     {
@@ -49,17 +47,17 @@ void InsertFirst(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;         
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)           
     {
         *first = newn;
     }
     else
     {
         newn->next =  *first;              
-        (*first)->prev = newn;                // $    100 chya previous madhe newn chi value yenar
-        *first = newn;                        // sirana sangch kii mulachya shirt cha var cha no kyy aahe tee
+        (*first)->prev = newn;                
+        *first = newn;                        
     }
 }
 
@@ -72,15 +70,15 @@ void InsertLast(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;         
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)            
     {
         *first = newn;
     }
     else
     {
-      temp = *first;       // temp madhe 100 aala
+      temp = *first;      
        
       
       while(temp->next != NULL)
@@ -89,7 +87,7 @@ void InsertLast(PPNODE first, int iNo)
       }
       
       temp->next = newn;
-      newn->prev = temp;          // $
+      newn->prev = temp;         
     }
 }
 
@@ -100,9 +98,9 @@ void InsertAtPos(PPNODE first, int iNo, int iPos)
     PNODE temp = NULL;
     PNODE newn = NULL;
 
-    iCount = Count(*first);      // count la 100 pathavla, // Count(*first)   Count method la 100 dila pahije
+    iCount = Count(*first);     
 
-    if((iPos < 1) || (iPos > iCount+1))         // this iCount '+ 1' is imp for insertion
+    if((iPos < 1) || (iPos > iCount+1))      
     {
       printf("Invalid position\n");
       return;  
@@ -126,37 +124,35 @@ void InsertAtPos(PPNODE first, int iNo, int iPos)
         newn->next= NULL;
         newn->prev = NULL;
 
-        for(i= 1; i < iPos -1; i++)   // ek ghar aali kade yeun thmbato
+        for(i= 1; i < iPos -1; i++)   
         {
             temp = temp->next;
         }
 
-        // right side connection
         newn ->next = temp->next;
-        temp->next->prev= newn;  //$
+        temp->next->prev= newn;  
 
-        // left side connection
         temp->next= newn;
-        newn->prev = temp;  // $
+        newn->prev = temp;  
     }
 }
 
 void DeleteFirst(PPNODE first)
 {
-    if(*first == NULL)             // LL is empty
+    if(*first == NULL)            
     {
         return;
     }
-    else if((*first)->next == NULL)      // LL has 1 node
+    else if((*first)->next == NULL)    
     {
         free(*first);
         *first = NULL;
     }
     else
     {
-        *first = (*first)->next;       // head madhe 200 ala
-        free((*first)->prev);          //$  200 cha prev pointer delete kela
-        (*first)->prev = NULL;         //$  200 cha previous la null kela 
+        *first = (*first)->next;     
+        free((*first)->prev);          
+        (*first)->prev = NULL;         
     }
 }
 
@@ -190,9 +186,9 @@ void DeleteAtPos(PPNODE first, int iPos)
 {
     int iCount = 0;
 
-    iCount = Count(*first);      // count la 100 pathavla, // Count(*first)   Count method la 100 dila pahije
+    iCount = Count(*first);     
 
-    if((iPos < 1) || (iPos > iCount))         // here only iCount ghetla karan titake nodes aahet titake ch pahije aaht, 6 astil tar 6 ch pahijet 
+    if((iPos < 1) || (iPos > iCount))          
     {
       printf("Invalid position\n");
       return;  
@@ -254,8 +250,3 @@ int main()
 
     return 0 ;
 }
-
-// types of while loops:
-// NULL type 1
-// 500 la type 2
-// 400 la type 3
