@@ -1,5 +1,4 @@
-// $ lines having this sign are for Doubly Linear List
-// chck loop once
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -31,7 +30,7 @@ int Count(PNODE first)
 
 void Display(PNODE first)
 {
-    printf("\nNULL <=> ");           // to indicate that the prev pointer of first node is NULL i.e. 100 chya prev is NULL
+    printf("\nNULL <=> ");      
 
     while(first != NULL)
     {
@@ -50,9 +49,9 @@ void InsertFirst(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;        
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)           
     {
         *first = newn;
     }
