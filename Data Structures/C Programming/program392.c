@@ -1,5 +1,3 @@
-// $ lines having this sign are for Doubly Linear List
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -31,7 +29,7 @@ int Count(PNODE first)
 
 void Display(PNODE first)
 {
-    printf("\nNULL");           // to indicate that the prev pointer of first node is NULL i.e. 100 chya prev is NULL
+    printf("\nNULL");           
 
     while(first != NULL)
     {
@@ -49,17 +47,17 @@ void InsertFirst(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;          
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)           
     {
         *first = newn;
     }
     else
     {
         newn->next =  *first;              
-        (*first)->prev = newn;                // $    100 chya previous madhe newn chi value yenar
-        *first = newn;                        // sirana sangch kii mulachya shirt cha var cha no kyy aahe tee
+        (*first)->prev = newn;                
+        *first = newn;                    
     }
 }
 
@@ -72,15 +70,15 @@ void InsertLast(PPNODE first, int iNo)
 
     newn -> data = iNo;
     newn ->next = NULL;
-    newn -> prev = NULL;          //$
+    newn -> prev = NULL;          
 
-    if(NULL == *first)             // LL is empty
+    if(NULL == *first)            
     {
         *first = newn;
     }
     else
     {
-      temp = *first;       // temp madhe 100 aala
+      temp = *first;       
        
       
       while(temp->next != NULL)
@@ -89,7 +87,7 @@ void InsertLast(PPNODE first, int iNo)
       }
       
       temp->next = newn;
-      newn->prev = temp;          // $
+      newn->prev = temp;
     }
 }
 
@@ -98,20 +96,20 @@ void InsertAtPos(PPNODE first, int iNo, int iPos)
 
 void DeleteFirst(PPNODE first)
 {
-    if(*first == NULL)             // LL is empty
+    if(*first == NULL)             
     {
         return;
     }
-    else if((*first)->next == NULL)      // LL has 1 node
+    else if((*first)->next == NULL)      
     {
         free(*first);
         *first = NULL;
     }
     else
     {
-        *first = (*first)->next;       // head madhe 200 ala
-        free((*first)->prev);          //$  200 cha prev pointer delete kela
-        (*first)->prev = NULL;         //$  200 cha previous la null kela 
+        *first = (*first)->next;       
+        free((*first)->prev);          
+        (*first)->prev = NULL;         
     }
 }
 
@@ -178,8 +176,3 @@ int main()
 
     return 0 ;
 }
-
-// types of while loops:
-// NULL type 1
-// 500 la type 2
-// 400 la type 3
