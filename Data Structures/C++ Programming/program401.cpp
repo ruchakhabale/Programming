@@ -1,8 +1,8 @@
-// this has error on purpose
+//error unresolved yet
 #include<iostream>
 using namespace std;
 
-#pragma pack(1)    // concept of this is same in c and c++
+#pragma pack(1)   
 struct node
 {
     int data;
@@ -16,11 +16,11 @@ typedef struct node ** PPNODE;
 class SinglyLL
 {
     private:
-        PNODE first;    // pointer aahe, C madhlya main madhla head is ethe class madhla first
+        PNODE first;    
         int iCount;
 
     public:
-        SinglyLL()      // default constructor
+        SinglyLL()   
         {
             
             this->first = NULL;
@@ -32,10 +32,8 @@ int main()
 {
     SinglyLL sobj;       
     
-    // if 5 nodes are present 
-
-    //sobj.first = NULL;      // error
-    //sobj.iCount = 15;       // error
+    sobj.first = NULL;      // error
+    sobj.iCount = 15;       // error
 
     
     return 0;
