@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#pragma pack(1)    +
+#pragma pack(1)    
 struct node
 {
     int data;
