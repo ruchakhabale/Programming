@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#pragma pack(1)    // concept of this is same in c and c++
+#pragma pack(1)    
 struct node
 {
     int data;
@@ -14,11 +14,11 @@ typedef struct node * PNODE;
 class SinglyLL
 {
     private:
-        PNODE first;    // pointer aahe, C madhlya main madhla head is ethe class madhla first
+        PNODE first;    
         int iCount;
 
     public:
-        SinglyLL()      // default constructor
+        SinglyLL()     
         {
             this->first = NULL;
             this->iCount = 0;
@@ -59,13 +59,3 @@ int main()
    
     return 0;
 }
-
-/*
-1. this use kara
-2. declare eka class madhe kara
-3. define (body) dusrya class madhe karycha
-
-in this program we have both the declarations and empty definitions within the same class, the next program403, has it separated
-declaration - building che flat owners chi list
-definition - specific flat chya aat jaan is like definition
-*/
