@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#pragma pack(1)    // concept of this is same in c and c++
+#pragma pack(1)    
 struct node
 {
     int data;
@@ -14,11 +14,10 @@ typedef struct node * PNODE;
 class SinglyLL
 {
     private:
-        PNODE first;    // pointer aahe, C madhlya main madhla head is ethe class madhla first
+        PNODE first;    
         int iCount;
 
     public:
-        // function declarations
         SinglyLL();      
         void Display();
         int Count();
@@ -30,7 +29,7 @@ class SinglyLL
         void DeleteAtPos(int iPos);      
 };
 
-SinglyLL :: SinglyLL()                                  //SinglyLL cha class ch naav and dusara Constructor cha naav aahe default constructor
+SinglyLL :: SinglyLL()                                  
 {
     this->first = NULL;
     this->iCount = 0;
@@ -65,7 +64,7 @@ void SinglyLL :: InsertFirst(int iNo)
     newn->data = iNo;
     newn->next = NULL;
 
-    if(this->first == NULL)         // LL is empty
+    if(this->first == NULL)        
     {
         this->first= newn;
     }
@@ -76,7 +75,7 @@ void SinglyLL :: InsertFirst(int iNo)
     }
 
 
-    this->iCount++;       // this iCount++ is common for both, even if it is if la kiva else la, kuthe jari insertt zala tari iCount vadla pahije
+    this->iCount++;       
     
 }
 void SinglyLL :: InsertLast(int iNo)
@@ -89,7 +88,7 @@ void SinglyLL :: InsertLast(int iNo)
     newn->data = iNo;
     newn->next = NULL;
 
-    if(this->first == NULL)         // LL is empty
+    if(this->first == NULL)         
     {
         this->first= newn;
     }
@@ -106,7 +105,7 @@ void SinglyLL :: InsertLast(int iNo)
 
     }
 
-    this->iCount++;       // this iCount++ is common for both, even if it is if la kiva else la, kuthe jari insertt zala tari iCount vadla pahije
+    this->iCount++;      
 }
 void SinglyLL :: InsertAtPos(int iNo, int iPos)
 {
@@ -122,7 +121,7 @@ void SinglyLL :: InsertAtPos(int iNo, int iPos)
 
     if(iPos == 1)
     {
-        this->InsertFirst(iNo);      // this-> can be used for functions too
+        this->InsertFirst(iNo);     
     }
     else if(iPos == iCount +1)
     {
@@ -153,18 +152,18 @@ void SinglyLL :: DeleteFirst()
 {
     PNODE temp = NULL;
 
-    if(this->first == NULL)    // LL is empty
+    if(this->first == NULL)    
     {
         return;
     }
-    else if(this->first->next == NULL)    // single node LL (sobj2 chi diagram from board)
+    else if(this->first->next == NULL)   
     {
         delete(this->first);
         this->first = NULL;
     }
-    else                                    // multi node LL (sobj3 chi diagram from board)
+    else                                  
     {
-        temp = this->first;  // 100 ala 
+        temp = this->first;  
 
         this->first = this->first->next;
 
@@ -178,20 +177,20 @@ void SinglyLL :: DeleteLast()
 {
     PNODE temp = NULL;
 
-    if(this->first == NULL)    // LL is empty
+    if(this->first == NULL)    
     {
         return;
     }
-    else if(this->first->next == NULL)    // single node LL (sobj2 chi diagram from board)
+    else if(this->first->next == NULL)    
     {
         delete(this->first);
         this->first = NULL;
     }
-    else                                    // multi node LL (sobj3 chi diagram from board)
+    else                                    
     {
-        temp = this->first;    // 100 ala
+        temp = this->first;   
         
-        while(temp->next->next != NULL)          // type 3 of while
+        while(temp->next->next != NULL)          
         {
             temp = temp->next;
         }
@@ -216,7 +215,7 @@ void SinglyLL :: DeleteAtPos(int iPos)
 
     if(iPos == 1)
     {
-        this->DeleteFirst();      // this-> can be used for functions too
+        this->DeleteFirst();     
     }
     else if(iPos == iCount )
     {
@@ -299,15 +298,3 @@ int main()
   
     return 0;
 }
-
-
-// rechk with 412 tithala code ethe aala aahe, edit and run that 
-
-/*
-1. this use kara
-2. declare eka class madhe kara
-3. define (body) dusrya class madhe karycha
-
-declaration - building che flat owners chi list
-definition - specific flat chya aat jaan is like definition
-*/
