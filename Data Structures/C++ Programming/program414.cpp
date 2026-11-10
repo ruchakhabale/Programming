@@ -1,4 +1,4 @@
-// rechk with 412 tithala code ethe aala aahe, edit and run that 
+
 #include<iostream>
 using namespace std;
 
