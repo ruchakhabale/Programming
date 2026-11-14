@@ -86,5 +86,5 @@ int main()
     InsertFirst(&head,&tail,21);
     InsertFirst(&head,&tail,11);
 
-    return 0;
+    return 0; 
 }
