@@ -14,7 +14,7 @@ typedef struct node ** PPNODE;
 
 void Display(PNODE first, PNODE last)
 {
-    if(first == NULL && last == NULL)    // filter
+    if(first == NULL && last == NULL)   
     {
         return;
     }
