@@ -14,7 +14,7 @@ typedef struct node ** PPNODE;
 
 void Display(PNODE first, PNODE last)
 {
-    if(first != NULL && last != NULL)    // this also works similar to filter only 
+    if(first != NULL && last != NULL)    
     {
         do
         {
@@ -34,14 +34,14 @@ int Count(PNODE first, PNODE last)
 
 void InsertFirst(PPNODE first, PPNODE last, int iNo)
 {
-    PNODE newn = NULL; // navin node banvycha pointer
+    PNODE newn = NULL; 
 
     newn = (PNODE) malloc (sizeof(NODE));
 
     newn->data = iNo;
     newn->next = NULL;
 
-    if(*first == NULL && *last == NULL)   // ll is empty
+    if(*first == NULL && *last == NULL)   
     {
         *first = newn;
         *last = newn;
