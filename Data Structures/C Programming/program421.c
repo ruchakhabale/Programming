@@ -96,7 +96,7 @@ int main()
     PNODE tail = NULL;
 
     
-    Display(head, tail);    // segmentation fault
+    Display(head, tail);    
 
     InsertFirst(&head,&tail,51);
     InsertFirst(&head,&tail,21);
@@ -111,9 +111,4 @@ int main()
     return 0;
 }
 
-/*
-there is no alternavtive for do-while used in Display and Count
-do-while loop is exit checking loop, bus madhun utaar tana, poloce pakadato, utaarna mhnje exit checking
-exit la ticket check karto
 
-*/
