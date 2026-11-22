@@ -150,7 +150,7 @@ void DeleteFirst(PPNODE first, PPNODE last)
     else
     {
         *first = (*first)->next;
-        free((*last)->next);        // Change
+        free((*last)->next);      
 
         (*last)->next = *first;
     }
@@ -180,7 +180,7 @@ void DeleteLast(PPNODE first, PPNODE last)
             temp = temp -> next;
         }
 
-        free(*last);        // free(temp->nexe);
+        free(*last);        
         *last = temp;
 
         (*last)->next = *first;
