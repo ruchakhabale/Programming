@@ -14,7 +14,7 @@ typedef struct node ** PPNODE;
 
 void Display(PNODE first, PNODE last)
 {
-    if(first == NULL && last == NULL)    // filter
+    if(first == NULL && last == NULL)   
     {
         return;
     }
@@ -49,30 +49,30 @@ int Count(PNODE first, PNODE last)
 
 void InsertFirst(PPNODE first, PPNODE last, int iNo)
 {
-    PNODE newn = NULL; // navin node banvycha pointer
+    PNODE newn = NULL; 
 
     newn = (PNODE) malloc (sizeof(NODE));
 
     newn->data = iNo;
     newn->next = NULL;
 
-    if(*first == NULL && *last == NULL)   // ll is empty
+    if(*first == NULL && *last == NULL)   
     {
         *first = newn;
         *last = newn;
     }
-    else                                 // atleast one node
+    else                                
     {
         newn ->next = *first;
         *first = newn;
     }
 
-    (*last)->next = *first;            // safe side always write this line everytime, this line should be compulsory for creating it as circular from linear
+    (*last)->next = *first;            
 }
 
 void InsertLast(PPNODE first, PPNODE last, int iNo)
 {
-    PNODE newn = NULL; // navin node banvycha pointer
+    PNODE newn = NULL; 
 
     newn = (PNODE) malloc (sizeof(NODE));
 
@@ -87,7 +87,7 @@ void InsertLast(PPNODE first, PPNODE last, int iNo)
     else
     {
         (*last) -> next = newn;
-        *last = (*last)->next;      // can use *last = newn; this as well
+        *last = (*last)->next;      
     }
 
     (*last)->next = *first;
@@ -114,7 +114,7 @@ void DeleteFirst(PPNODE first, PPNODE last)
     else
     {
        *first= (*first)->next;
-        free((*last)->next);            // Change
+        free((*last)->next);           
 
         (*last)->next = *first; 
     }
@@ -180,10 +180,3 @@ int main()
 
     return 0;
 }
-
-/*
-for DeleteFirst(), we can delete by using temp pointer also 
-and by using 
-free(last->next) // last chya next madhe 100 asto toh udala 
-
-*/
