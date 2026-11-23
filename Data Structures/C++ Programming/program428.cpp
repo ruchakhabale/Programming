@@ -2,14 +2,14 @@
 using namespace std;
 
 #pragma pack(1)
-struct node 
+struct node
 {
     int data;
     struct node *next;
 };
 
 typedef struct node NODE;
-typedef struct node * PNODE;
+typedef struct node* PNODE;
 
 class SinglyCL
 {
@@ -17,16 +17,14 @@ class SinglyCL
         PNODE first;
         PNODE last;
         int iCount;
-
+    
     public:
         SinglyCL();
-
-
 };
 
 SinglyCL :: SinglyCL()
 {
-    cout<<"Inside Consutructor \n";
+    cout<<"Inside Constructor\n";
 
     this->first = NULL;
     this->last = NULL;
