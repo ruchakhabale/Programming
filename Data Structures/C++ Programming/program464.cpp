@@ -16,9 +16,9 @@ class Stack
 
     public:
         Stack();
-        void Push(int iNo);     // InsertFirst
-        int Pop();              // DeleteFirst
-        int Peep();             // DeleteFirst
+        void Push(int iNo);     
+        int Pop();             
+        int Peep();            
         void Display();
         int Count();
 };
