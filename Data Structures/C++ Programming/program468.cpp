@@ -16,8 +16,8 @@ class Queue
 
     public:
         Queue();
-        void Enqueue(int iNo);     // InsertLast
-        int Dequeue();              // DeleteFirst
+        void Enqueue(int iNo);     
+        int Dequeue();             
         void Display();
         int Count();
 };
